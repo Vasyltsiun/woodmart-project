@@ -5,3 +5,7 @@
 .css-hyum1k-MuiToolbar-root {
     min-height: 40px;
 }
+.middle_header {
+    display: flex;
+    background-color: rgba(251, 250, 247, 1)
+}

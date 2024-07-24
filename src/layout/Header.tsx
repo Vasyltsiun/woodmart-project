@@ -4,6 +4,7 @@ import { Container } from '@mui/material'
 import Logo from '../components/Logo/Logo'
 import Menu from '../components/Menu/Menu'
 import Avatar from '../components/Menu/Avatar'
+import Search from '../components/Menu/Search'
 
 import './Header.css'
 
@@ -15,13 +16,16 @@ const Header = (props: Props) => {
             {' '}
             <AppBar
                 position="static"
-                sx={{ backgroundColor: 'rgba(16, 16, 16, 0.05)' }}
+                sx={{ backgroundColor: 'rgba(16, 16, 16, 0.06)' }}
             >
                 <Container className="main_container" sx={{ padding: '0px' }}>
                     <Toolbar>
-                        <Logo />
                         <Menu />
                         <Avatar />
+                    </Toolbar>
+                    <Toolbar className="middle_header">
+                        <Logo />
+                        <Search />
                     </Toolbar>
                 </Container>
             </AppBar>

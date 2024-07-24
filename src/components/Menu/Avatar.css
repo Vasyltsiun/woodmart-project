@@ -12,3 +12,11 @@
 .header_contact {
     font-size: 14px;
 }
+.button {
+    border: none;
+    color: grey;
+    cursor: pointer;
+}
+.avatars_images {
+    cursor: pointer;
+}

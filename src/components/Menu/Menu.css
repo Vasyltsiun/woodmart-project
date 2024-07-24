@@ -1,0 +1,15 @@
+.buttons {
+    height: 20px;
+    width: 80%;
+    color: grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    font-size: 14px;
+    border-left: solid 1px rgb(215, 214, 214);
+}
+.button {
+    text-transform: capitalize;
+    font-size: 14px;
+}

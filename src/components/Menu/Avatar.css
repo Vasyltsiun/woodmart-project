@@ -1,0 +1,14 @@
+.header_avatars {
+    display: flex;
+    align-items: center;
+    color: grey;
+    padding-left: 10px;
+    border-left: solid 1px rgb(215, 214, 214);
+    height: 20px;
+}
+.header_contact {
+    padding: 10px;
+}
+.header_contact {
+    font-size: 14px;
+}

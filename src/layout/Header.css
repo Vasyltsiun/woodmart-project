@@ -6,7 +6,15 @@
     min-height: 40px;
 }
 .middle_header {
+    height: 64px;
     display: flex;
-    background-color: rgba(251, 250, 247, 1);
+    /*background-color: rgba(251, 250, 247, 1);*/
     justify-content: space-between;
+    align-items: center;
+}
+.css-i6s8oy {
+    min-height: 40px;
+}
+.css-1fpo0vu-MuiToolbar-root {
+    min-height: 45px;
 }

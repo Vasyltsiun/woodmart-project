@@ -1,0 +1,64 @@
+.all_bottom_menu{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.bottom_menu {
+    display: flex;
+    width: 70%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+}
+.bottom_menu a {
+    padding-left: 30px;
+    text-decoration: none;
+    color: rgb(65, 65, 65);
+    font-weight: 600;
+    font-size: 14px;
+}
+.chairs {
+    background-image: url(Icons/Chair.svg);
+    background-repeat: no-repeat;
+}
+.tablets {
+    background-image: url(Icons/Tables.svg);
+    background-repeat: no-repeat;
+}
+.sofas {
+    background-image: url(Icons/Sofas.svg);
+    background-repeat: no-repeat;
+}
+.armchairs {
+    background-image: url(Icons/Armchairs.svg);
+    background-repeat: no-repeat;
+}
+.beds {
+    background-image: url(Icons/Beds.svg);
+    background-repeat: no-repeat;
+}
+.storage {
+    background-image: url(Icons/Storage.svg);
+    background-repeat: no-repeat;
+}
+.textiles {
+    background-image: url(Icons/Textiles.svg);
+    background-repeat: no-repeat;
+}
+.lighting {
+    background-image: url(Icons/Lighting.svg);
+    background-repeat: no-repeat;
+}
+.toys {
+    background-image: url(Icons/Toys.svg);
+    background-repeat: no-repeat;
+}
+.decor {
+    background-image: url(Icons/Decor.svg);
+    background-repeat: no-repeat;
+}
+.btn_free_shipping {
+    width: 20%;
+    text-decoration: none;
+}

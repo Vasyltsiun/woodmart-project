@@ -5,6 +5,7 @@ import Logo from '../components/Logo/Logo'
 import Menu from '../components/Menu/Menu'
 import Avatar from '../components/Menu/Avatar'
 import Search from '../components/Menu/Search'
+import BottomMenu from '../components/Menu/BottomMenu'
 
 import './Header.css'
 
@@ -23,9 +24,12 @@ const Header = (props: Props) => {
                         <Menu />
                         <Avatar />
                     </Toolbar>
-                    <Toolbar className="middle_header">
+                    <Toolbar className="middle_header" sx={{ padding: '0px' }}>
                         <Logo />
                         <Search />
+                    </Toolbar>
+                    <Toolbar className="middle_header" sx={{ padding: '0px' }}>
+                        <BottomMenu />
                     </Toolbar>
                 </Container>
             </AppBar>

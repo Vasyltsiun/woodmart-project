@@ -7,5 +7,6 @@
 }
 .middle_header {
     display: flex;
-    background-color: rgba(251, 250, 247, 1)
+    background-color: rgba(251, 250, 247, 1);
+    justify-content: space-between;
 }

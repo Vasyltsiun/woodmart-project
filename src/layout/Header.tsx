@@ -6,10 +6,10 @@ import Menu from '../components/Menu/Menu'
 import Avatar from '../components/Menu/Avatar'
 import Search from '../components/Menu/Search'
 import BottomMenu from '../components/Menu/BottomMenu'
-import Login from '../components/Menu/Login'
 import Compare from '../components/Menu/Compare'
 import Wishlist from '../components/Menu/Wishlist'
-
+import Login from '../components/Menu/Login'
+import Card from '../components/Menu/Card'
 import './Header.css'
 
 type Props = {}
@@ -33,6 +33,7 @@ const Header = (props: Props) => {
                         <Compare />
                         <Wishlist />
                         <Login />
+                        <Card />
                     </Toolbar>
                     <Toolbar className="middle_header" sx={{ padding: '0px' }}>
                         <BottomMenu />

@@ -7,6 +7,8 @@ import Avatar from '../components/Menu/Avatar'
 import Search from '../components/Menu/Search'
 import BottomMenu from '../components/Menu/BottomMenu'
 import Login from '../components/Menu/Login'
+import Compare from '../components/Menu/Compare'
+import Wishlist from '../components/Menu/Wishlist'
 
 import './Header.css'
 
@@ -28,6 +30,8 @@ const Header = (props: Props) => {
                     <Toolbar className="middle_header" sx={{ padding: '0px' }}>
                         <Logo />
                         <Search />
+                        <Compare />
+                        <Wishlist />
                         <Login />
                     </Toolbar>
                     <Toolbar className="middle_header" sx={{ padding: '0px' }}>

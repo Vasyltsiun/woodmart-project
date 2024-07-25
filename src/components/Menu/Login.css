@@ -1,3 +1,26 @@
 .login_register_menu {
-    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 13%;
+    height: 40px;
+    background-color: rgba(225, 224, 224, 0.6);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.login_icon {
+    height: 40px;
+    width: 50px;
+    background-image: url(Icons/Avatar.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.login_button  {
+font-weight: 600;
+font-size: 14px;
+text-decoration: none;
+color: rgba(92, 91, 91, 0.7);
+margin-right: 10px;
 }

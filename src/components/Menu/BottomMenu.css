@@ -60,5 +60,22 @@
 }
 .btn_free_shipping {
     width: 20%;
+    width: 238px;
+    height: 28px;
+    border: none;
+    background-color: rgba(224, 234, 240, 1);
+    text-align: center;
+    border-radius: 35px;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    -ms-border-radius: 35px;
+    -o-border-radius: 35px;
+    padding: 5px 10px;
+    min-height: 28px;
+    font-size: 11px;
+}
+.btn_free_shipping a {
     text-decoration: none;
+color: #333;
+cursor: pointer;
 }

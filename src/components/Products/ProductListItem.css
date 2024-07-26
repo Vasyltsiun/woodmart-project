@@ -31,3 +31,11 @@
 .css-1qsxih2 {
     max-width: 1400px;
 }
+@media (min-width: 1536px) {
+    .css-pjvi1b {
+        flex-basis: 25%;
+        -webkit-box-flex: 0;
+        flex-grow: 0;
+        max-width: 25%;
+    }
+}

@@ -16,7 +16,9 @@ const ProductListItem = ({ title, image, type, price }: Props) => {
                     <a
                         className="wishlist_products"
                         href="https://www.ukr.net/"
-                    ></a>
+                    >
+                        {' '}
+                    </a>
                 </div>
                 <h3 className="product-title">{title}</h3>
                 <div className="product-features">{type}</div>

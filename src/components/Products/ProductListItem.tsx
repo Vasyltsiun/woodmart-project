@@ -13,6 +13,7 @@ const ProductListItem = ({ title, image, type, price }: Props) => {
             <CardContent>
                 <div className="product-image">
                     <img src={image} alt="" />
+                    <a className="wishlist_products" href="wishlist"></a>
                 </div>
                 <h3 className="product-title">{title}</h3>
                 <div className="product-features">{type}</div>

@@ -1,40 +1,49 @@
-.product-features {
-    margin: 10px 0;
-}
-.product-title {
-    font-size: 25px;
+.product-list-item {
+    max-width: 100%;
+    border-radius: 3%;
 }
 .product-image {
     display: flex;
     justify-content: center;
 }
 .product-image img {
-    width: 250px;
-    height: 300px;
-
-}
-.product-list-item { 
-    border-radius: 50%;
-    width: 250px;
-    height: 250px; 
-
-}
-.css-mhc70k-MuiGrid-root {
-    max-width: 100%;
-}
-.css-1tppydz-MuiGrid-root {
-    max-width: 20%;
-}
-.MuiCardContent-root {
     height: 250px;
+    width: 250px;
+    margin-left: -5px;
 }
-.css-1qsxih2 {
-    max-width: 1400px;
+.product-title {
+    color: black;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
+.product-features {
+    color: #a5a5a5;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.product-price {
+    color: rgb(245, 154, 87);
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.css-1rwt2y5-MuiButtonBase-root-MuiButton-root {
+    width: 150px;
+    height: 35px;
+    border-radius: 25px;
+    background-color: rgb(245, 154, 87);
+    border: none;
+    color: white;
+
+}
+
 @media (min-width: 1536px) {
-    .css-pjvi1b {
-        flex-basis: 20%;
+    .css-1tppydz-MuiGrid-root {
+        -webkit-flex-basis: 33.333333%;
+        -ms-flex-preferred-size: 33.333333%;
+        flex-basis: 33.333333%;
         -webkit-box-flex: 0;
+        -webkit-flex-grow: 0;
+        -ms-flex-positive: 0;
         flex-grow: 0;
         max-width: 20%;
     }

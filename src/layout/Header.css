@@ -8,7 +8,6 @@
 .middle_header {
     height: 64px;
     display: flex;
-    /*background-color: rgba(251, 250, 247, 1);*/
     justify-content: space-between;
     align-items: center;
 }

@@ -10,34 +10,27 @@ const ProductsList = (props: Props) => {
     return (
         <>
             <Typography
-                color={'black'}
-                fontWeight={'700'}
-                lineHeight={'42px'}
-                fontSize={'32px'}
                 variant="h4"
                 component={'h2'}
+                color={'#333333'}
+                fontSize={'38px'}
+                fontWeight={'700'}
                 sx={{
-                    marginBottom: '10px',
+                    marginBottom: '30px',
                 }}
             >
                 {' '}
-                Our categories
-            </Typography>
-            <Typography
-                color={'#777777'}
-                fontSize={'16px'}
-                component={'h2'}
-                sx={{
-                    marginBottom: '40px',
-                }}
-            >
-                {' '}
-                Lots of new products and product collections
+                Weekly bestsellers
             </Typography>
             <Grid container spacing={2}>
-                {productsArrey.map(({ id, title, image }) => (
+                {productsArrey.map(({ id, title, type, price, image }) => (
                     <Grid item xs={12} sm={6} lg={4} key={id}>
-                        <ProductListItem title={title} image={image} />
+                        <ProductListItem
+                            title={title}
+                            type={type}
+                            price={price}
+                            image={image}
+                        />
                     </Grid>
                 ))}
             </Grid>

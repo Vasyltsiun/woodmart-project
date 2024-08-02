@@ -54,3 +54,11 @@
     background-image: url(Icons/Favorite.png);
     background-repeat: no-repeat;
 }
+@media (min-width: 1536px) {
+    .css-pjvi1b {
+        flex-basis: 33.3333%;
+        -webkit-box-flex: 0;
+        flex-grow: 0;
+        max-width: 20%;
+    }
+}

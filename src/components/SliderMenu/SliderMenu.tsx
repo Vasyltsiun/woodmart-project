@@ -9,12 +9,12 @@ type Props = {}
 const SliderMenu = (props: Props) => {
     return (
         <Flickity
-            className={'carousel'} // default ''
-            elementType={'div'} // default 'div'
-            options={flickityOptions} // takes flickity options {}
-            disableImagesLoaded={false} // default false
-            reloadOnUpdate // default false
-            static // default false
+            className={'carousel'}
+            elementType={'div'}
+            options={flickityOptions}
+            disableImagesLoaded={false}
+            reloadOnUpdate
+            static
         >
             <img
                 src="/images/blog_pictures/furniture-slider-1.jpg"

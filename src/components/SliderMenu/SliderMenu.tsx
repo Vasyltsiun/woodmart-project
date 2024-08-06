@@ -16,9 +16,18 @@ const SliderMenu = (props: Props) => {
             reloadOnUpdate // default false
             static // default false
         >
-            <img src="/images/blog_pictures/furniture-slider-1.jpg" />
-            <img src="/images/blog_pictures/furniture-slider-2.jpg" />
-            <img src="/images/blog_pictures/furniture-slider-3.jpg" />
+            <img
+                src="/images/blog_pictures/furniture-slider-1.jpg"
+                alt="furniture-slider-1"
+            />
+            <img
+                src="/images/blog_pictures/furniture-slider-2.jpg"
+                alt="furniture-slider-2"
+            />
+            <img
+                src="/images/blog_pictures/furniture-slider-3.jpg"
+                alt="furniture-slider-3"
+            />
         </Flickity>
     )
 }

@@ -3,14 +3,14 @@ import CssBaseline from '@mui/material/CssBaseline'
 import { StyledEngineProvider } from '@mui/material/styles'
 import Main from './Main'
 import Footer from './Footer'
-import SliderMenu from 'components//SliderMenu/SliderMenu'
+import SliderMain from 'components/SliderMain/SliderMain'
 
 const App = () => {
     return (
         <StyledEngineProvider injectFirst>
             <CssBaseline />
             <Header />
-            <SliderMenu />
+            <SliderMain />
             <Main />
             <Footer />
         </StyledEngineProvider>

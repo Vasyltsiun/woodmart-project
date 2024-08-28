@@ -35,6 +35,7 @@ const Header = (props: Props) => {
                         <Login />
                         <Card />
                     </Toolbar>
+
                     <Toolbar className="middle_header" sx={{ padding: '0px' }}>
                         <BottomMenu />
                     </Toolbar>

@@ -1,16 +1,15 @@
 import './BottomMenu.css'
+import MenuItem from './MenuItem'
 
 type Props = {}
 const BottomMenu = (props: Props) => {
     return (
         <>
             <ul className="bottom_menu">
-                <li className="chairs">
-                    <a href="chairs">Chairs</a>
-                </li>
-                <li className="tablets">
-                    <a href="tablets">Tablets</a>
-                </li>
+                <MenuItem to="/">Home</MenuItem>
+                <MenuItem to="/chairs">Chairs</MenuItem>
+                <MenuItem to="/tablets">Tablets</MenuItem>
+
                 <li className="sofas">
                     <a href="sofas">Sofas</a>
                 </li>

@@ -1,0 +1,30 @@
+.product_chairs {
+    padding: 150px;
+    font-size: 50px;
+    max-width: 100%;
+
+}
+.products_size {
+    max-width: 25%;
+    display: flex;
+    border-radius: 10%;
+    margin-top: 15px;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    -ms-border-radius: 10%;
+    -o-border-radius: 10%;
+}
+.card_product_chairs {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+
+
+
+
+

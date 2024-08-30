@@ -15,8 +15,14 @@ const App = () => {
             <Header />
             <Routes>
                 <Route path="/" element={<HomePage />} />
-                <Route path="/chairs" element={<ChairsPage />} />
-                <Route path="/tablets" element={<TabletsPage />} />
+                <Route
+                    path="chairs"
+                    element={<ChairsPage category="chairs" />}
+                />
+                <Route
+                    path="tablets"
+                    element={<TabletsPage category="tablets" />}
+                />
             </Routes>
             <Footer />
         </StyledEngineProvider>

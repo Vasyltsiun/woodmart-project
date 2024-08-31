@@ -9,7 +9,6 @@ const BottomMenu = (props: Props) => {
                 <MenuItem to="/">Home</MenuItem>
                 <MenuItem to="/chairs">Chairs</MenuItem>
                 <MenuItem to="/tablets">Tablets</MenuItem>
-
                 <li className="sofas">
                     <a href="sofas">Sofas</a>
                 </li>

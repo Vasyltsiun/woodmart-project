@@ -22,6 +22,7 @@ export const productsArrey: Product[] = [
         type: 'Sofas',
         price: 2100.0,
         image: 'images/blog_pictures/can_sofas.jpeg',
+        category: 'home',
     },
     {
         id: 3,
@@ -29,6 +30,7 @@ export const productsArrey: Product[] = [
         type: 'Armchairs',
         price: 680,
         image: 'images/blog_pictures/belt_armchairs.jpeg',
+        category: 'home',
     },
     {
         id: 4,
@@ -36,6 +38,7 @@ export const productsArrey: Product[] = [
         type: 'Tablets',
         price: 449,
         image: 'images/blog_pictures/giro-LR_tablets.jpeg',
+        category: 'home',
     },
     {
         id: 5,
@@ -43,6 +46,7 @@ export const productsArrey: Product[] = [
         type: 'Chairs',
         price: 440,
         image: 'images/blog_pictures/soft_edge_chairs.jpeg',
+        category: 'home',
     },
     {
         id: 6,
@@ -50,6 +54,7 @@ export const productsArrey: Product[] = [
         type: 'Sofas',
         price: 1890,
         image: 'images/blog_pictures/palissade_sofas.jpeg',
+        category: 'home',
     },
     {
         id: 7,
@@ -57,6 +62,7 @@ export const productsArrey: Product[] = [
         type: 'Tablets',
         price: 1519,
         image: 'images/blog_pictures/bitta_tablets.jpeg',
+        category: 'home',
     },
     {
         id: 8,
@@ -64,6 +70,7 @@ export const productsArrey: Product[] = [
         type: 'Armchairs',
         price: 1600,
         image: 'images/blog_pictures/albert_armchairs.jpeg',
+        category: 'home',
     },
     {
         id: 9,
@@ -71,6 +78,7 @@ export const productsArrey: Product[] = [
         type: 'Sofas',
         price: 1669,
         image: 'images/blog_pictures/navova_sofas.jpeg',
+        category: 'home',
     },
     {
         id: 10,

@@ -11,6 +11,7 @@ import { Toolbar } from '@mui/material'
 import BottomMenu from 'components/Menu/BottomMenu'
 import '../components/Menu/BottomMenu.css'
 import SofasPage from 'pages/Sofas/SofasPage'
+import ArmchairsPage from 'pages/Armchairs/ArmchairsPage'
 
 const App = () => {
     return (
@@ -35,6 +36,10 @@ const App = () => {
                     element={<TabletsPage category="tablets" />}
                 />
                 <Route path="sofas" element={<SofasPage category="sofas" />} />
+                <Route
+                    path="armchairs"
+                    element={<ArmchairsPage category="armchairs" />}
+                />
             </Routes>
             <Footer />
         </StyledEngineProvider>

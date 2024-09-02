@@ -1,45 +1,54 @@
+import { Container, Toolbar } from '@mui/material'
 import './BottomMenu.css'
 import MenuItem from './MenuItem'
 
 type Props = {}
 const BottomMenu = (props: Props) => {
     return (
-        <>
-            <ul className="bottom_menu">
-                <MenuItem to="/">Home</MenuItem>
-                <MenuItem to="/chairs">Chairs</MenuItem>
-                <MenuItem to="/tablets">Tablets</MenuItem>
-                <li className="sofas">
-                    <a href="sofas">Sofas</a>
-                </li>
-                <li className="armchairs">
-                    <a href="armchairs">Armchairs</a>
-                </li>
-                <li className="beds">
-                    <a href="beds">Beds</a>
-                </li>
-                <li className="storage">
-                    <a href="storage">Storage</a>
-                </li>
-                <li className="textiles">
-                    <a href="textiles">Textiles</a>
-                </li>
-                <li className="lighting">
-                    <a href="lighting">Lighting</a>
-                </li>
-                <li className="toys">
-                    <a href="toys">Toys</a>
-                </li>
-                <li className="decor">
-                    <a href="decor">Decor</a>
-                </li>
-            </ul>
-            <div className="btn_free_shipping">
-                <a href="free_shipping">
-                    Free shipping for all orders of $1.300
-                </a>
-            </div>
-        </>
+        <Container className="main_container" sx={{ padding: '0px' }}>
+            <Toolbar className="all_bottom_menu">
+                <MenuItem to="/">
+                    <li className="home">Home</li>
+                </MenuItem>
+                <ul className="bottom_menu">
+                    <MenuItem to="/chairs">
+                        <li className="chairs">Chairs</li>
+                    </MenuItem>
+                    <MenuItem to="/tablets">
+                        <li className="tablets">Tablets</li>
+                    </MenuItem>
+                    <MenuItem to="/sofas">
+                        <li className="sofas">Sofas</li>
+                    </MenuItem>
+                    <MenuItem to="/armchairs">
+                        <li className="armchairs">Armchairs</li>
+                    </MenuItem>
+                    <MenuItem to="beds">
+                        <li className="beds">Beds</li>
+                    </MenuItem>
+                    <MenuItem to="/storage">
+                        <li className="storage">Storage</li>
+                    </MenuItem>
+                    <MenuItem to="/textiles">
+                        <li className="textiles">Textiles</li>
+                    </MenuItem>
+                    <MenuItem to="/lighting">
+                        <li className="lighting">Lighting</li>
+                    </MenuItem>
+                    <MenuItem to="/toys">
+                        <li className="toys">Toys</li>
+                    </MenuItem>
+                    <MenuItem to="/decor">
+                        <li className="decor">Decor</li>
+                    </MenuItem>
+                </ul>
+                <div className="btn_free_shipping">
+                    <a href="free_shipping">
+                        Free shipping for all orders of $1.300
+                    </a>
+                </div>
+            </Toolbar>
+        </Container>
     )
 }
 export default BottomMenu

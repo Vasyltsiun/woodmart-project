@@ -14,7 +14,7 @@ export const productsArrey: Product[] = [
         type: 'Chairs',
         price: 320.0,
         image: 'images/blog_pictures/curve_chair.jpeg',
-        category: 'chairs',
+        category: 'home',
     },
     {
         id: 2,
@@ -86,7 +86,7 @@ export const productsArrey: Product[] = [
         type: 'Tablets',
         price: 699,
         image: 'images/blog_pictures/aruda_tablets.jpeg',
-        category: 'tablets',
+        category: 'home',
     },
     {
         id: 1,
@@ -118,6 +118,14 @@ export const productsArrey: Product[] = [
         type: 'Chairs',
         price: 320.0,
         image: 'images/blog_pictures/curve_chair.jpeg',
+        category: 'chairs',
+    },
+    {
+        id: 1,
+        title: 'Revolt',
+        type: 'Chairs',
+        price: 320.0,
+        image: 'images/blog_pictures/chair_revolt.jpg',
         category: 'chairs',
     },
 ]

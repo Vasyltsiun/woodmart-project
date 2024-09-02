@@ -1,15 +1,9 @@
-.product_chairs {
-    padding: 150px;
-    font-size: 50px;
-    max-width: 100%;
-
-}
 .products_size {
-    max-width: 25%;
+    max-width: 20%;
     display: flex;
     border-radius: 10%;
-    margin-top: 15px;
-    -webkit-border-radius: 10%;
+    padding: 5px;
+     -webkit-border-radius: 10%;
     -moz-border-radius: 10%;
     -ms-border-radius: 10%;
     -o-border-radius: 10%;
@@ -20,11 +14,15 @@
     justify-content: space-between;
     align-items: center;
     overflow: hidden;
-
 }
-
-
-
-
-
+.MuiPaper-root {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.css-mhc70k-MuiGrid-root {
+    display: flex;
+    justify-content: center;
+}
 

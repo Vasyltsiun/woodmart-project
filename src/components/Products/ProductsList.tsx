@@ -23,16 +23,18 @@ const ProductsList = (props: Props) => {
                 Weekly bestsellers
             </Typography>
             <Grid container spacing={2}>
-                {productsArrey.map(({ id, title, type, price, image }) => (
-                    <Grid item xs={12} sm={6} lg={4} key={id}>
-                        <ProductListItem
-                            title={title}
-                            type={type}
-                            price={price}
-                            image={image}
-                        />
-                    </Grid>
-                ))}
+                {productsArrey
+                    .filter((item) => item.category === 'home')
+                    .map(({ id, title, type, price, image }) => (
+                        <Grid item xs={12} sm={6} lg={4} key={id}>
+                            <ProductListItem
+                                title={title}
+                                type={type}
+                                price={price}
+                                image={image}
+                            />
+                        </Grid>
+                    ))}
             </Grid>
         </>
     )

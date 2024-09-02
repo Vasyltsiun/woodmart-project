@@ -1,62 +1,82 @@
-.all_bottom_menu{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
 .bottom_menu {
     display: flex;
-    width: 70%;
+    width: 80%;
     align-items: center;
-    justify-content: space-between;
-    padding: 0;
+    padding-left: 0;
 }
 .bottom_menu a {
-    padding-left: 30px;
+    padding-left: 20px;
     text-decoration: none;
     color: rgb(65, 65, 65);
     font-weight: 600;
     font-size: 14px;
 }
+.home {
+    color: rgb(65, 65, 65);
+    font-weight: 600;
+    font-size: 14px;
+    list-style-type: none;
+}
 .chairs {
     background-image: url(Icons/Chair.svg);
     background-repeat: no-repeat;
+    background-position-x: -5px;
+    padding-left: 20px;
+    list-style-type: none;
 }
 .tablets {
     background-image: url(Icons/Tables.svg);
     background-repeat: no-repeat;
+    padding-left: 25px;
+    list-style-type: none;
 }
 .sofas {
     background-image: url(Icons/Sofas.svg);
     background-repeat: no-repeat;
+    padding-left: 25px;
+    list-style-type: none;
 }
 .armchairs {
     background-image: url(Icons/Armchairs.svg);
     background-repeat: no-repeat;
+    padding-left: 25px;
+    list-style-type: none;
 }
 .beds {
     background-image: url(Icons/Beds.svg);
     background-repeat: no-repeat;
+    padding-left: 25px;
+    list-style-type: none;
 }
 .storage {
     background-image: url(Icons/Storage.svg);
     background-repeat: no-repeat;
+    padding-left: 25px;
+    list-style-type: none;
 }
 .textiles {
     background-image: url(Icons/Textiles.svg);
     background-repeat: no-repeat;
+    padding-left: 25px;
+    list-style-type: none;
 }
 .lighting {
     background-image: url(Icons/Lighting.svg);
     background-repeat: no-repeat;
+    padding-left: 25px;
+    list-style-type: none;
 }
 .toys {
     background-image: url(Icons/Toys.svg);
     background-repeat: no-repeat;
+    padding-left: 25px;
+    list-style-type: none;
 }
 .decor {
     background-image: url(Icons/Decor.svg);
     background-repeat: no-repeat;
+    padding-left: 25px;
+    list-style-type: none;
 }
 .btn_free_shipping {
     width: 20%;
@@ -76,6 +96,18 @@
 }
 .btn_free_shipping a {
     text-decoration: none;
-color: #333;
-cursor: pointer;
+    color: #333;
+    cursor: pointer;
+}
+.all_bottom_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.MuiToolbar-root {
+    width: 100%;
+}
+.css-1e1uf6w-MuiToolbar-root {
+    padding: 70px;
+    padding-bottom: 30px;
 }

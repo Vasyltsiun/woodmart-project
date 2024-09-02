@@ -5,7 +5,6 @@ import Footer from './Footer'
 import { Route, Routes } from 'react-router'
 import ChairsPage from 'pages/Chairs/ChairsPage'
 import TabletsPage from 'pages/Tablets/TabletsPage'
-import SliderMain from 'components/SliderMain/SliderMain'
 import Home from 'pages/Home/Home'
 import { Toolbar } from '@mui/material'
 import BottomMenu from 'components/Menu/BottomMenu'
@@ -24,7 +23,6 @@ const App = () => {
             >
                 <BottomMenu />
             </Toolbar>
-            <SliderMain />
             <Routes>
                 <Route path="/" element={<Home />}></Route>
                 <Route

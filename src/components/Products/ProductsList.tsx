@@ -1,6 +1,7 @@
 import { Grid, Typography } from '@mui/material'
 import ProductListItem from './ProductListItem'
 import { productsArrey } from 'utils/productsArrey'
+import SliderMain from 'components/SliderMain/SliderMain'
 
 console.log(productsArrey)
 
@@ -9,6 +10,7 @@ type Props = {}
 const ProductsList = (props: Props) => {
     return (
         <>
+            <SliderMain />
             <Typography
                 variant="h4"
                 component={'h2'}

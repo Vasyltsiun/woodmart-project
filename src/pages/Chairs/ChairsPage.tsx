@@ -22,28 +22,27 @@ const ChairsPage = ({ category }: Props) => {
             >
                 Chairs
             </Typography>
-            <Grid container spacing={2}>
-                <div className="card_product_chairs">
-                    {productsArrey
-                        .filter((item) => item.category === category)
-                        .map(({ id, title, type, price, image }) => (
-                            <Grid
-                                item
-                                xs={12}
-                                sm={6}
-                                md={4}
-                                key={id}
-                                className="products_size"
-                            >
-                                <ProductListItem
-                                    title={title}
-                                    type={type}
-                                    price={price}
-                                    image={image}
-                                />
-                            </Grid>
-                        ))}
-                </div>
+
+            <Grid container spacing={2} xs={10}>
+                {productsArrey
+                    .filter((item) => item.category === category)
+                    .map(({ id, title, type, price, image }) => (
+                        <Grid
+                            item
+                            xs={12}
+                            sm={6}
+                            lg={4}
+                            key={id}
+                            className="products_size"
+                        >
+                            <ProductListItem
+                                title={title}
+                                type={type}
+                                price={price}
+                                image={image}
+                            />
+                        </Grid>
+                    ))}
             </Grid>
         </>
     )

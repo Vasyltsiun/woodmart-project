@@ -8,21 +8,12 @@
     -ms-border-radius: 10%;
     -o-border-radius: 10%;
 }
-.card_product_chairs {
-    display: flex;
-    flex-flow: wrap;
-    justify-content: space-between;
-    align-items: center;
-    overflow: hidden;
-}
-.MuiPaper-root {
+.MuiGrid-root {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    display: block;
-}
-.css-mhc70k-MuiGrid-root {
     display: flex;
-    justify-content: center;
 }
+
+
 

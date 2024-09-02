@@ -2,18 +2,18 @@
     position: relative;
   }
   
-  .flickity-enabled:focus { outline: none; }
+  .flickity-enabled:focus { 
+    outline: none; 
+  }
   
   .flickity-viewport {
     overflow: hidden;
     position: relative;
-    height: 100%;
   }
   
   .flickity-slider {
     position: absolute;
     width: 100%;
-    height: 100%;
   }
     
   .flickity-enabled.is-draggable {
@@ -94,7 +94,7 @@
     left: 20%;
     top: 20%;
     width: 60%;
-    height: 60%;
+    height: 50%;
   }
     
   .flickity-page-dots {

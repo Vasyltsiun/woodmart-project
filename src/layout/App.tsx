@@ -10,6 +10,7 @@ import Home from 'pages/Home/Home'
 import { Toolbar } from '@mui/material'
 import BottomMenu from 'components/Menu/BottomMenu'
 import '../components/Menu/BottomMenu.css'
+import SofasPage from 'pages/Sofas/SofasPage'
 
 const App = () => {
     return (
@@ -33,6 +34,7 @@ const App = () => {
                     path="tablets"
                     element={<TabletsPage category="tablets" />}
                 />
+                <Route path="sofas" element={<SofasPage category="sofas" />} />
             </Routes>
             <Footer />
         </StyledEngineProvider>

@@ -11,6 +11,7 @@ const ProductsList = (props: Props) => {
     return (
         <>
             <SliderMain />
+
             <Typography
                 variant="h4"
                 component={'h2'}

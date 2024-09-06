@@ -1,0 +1,130 @@
+.footer {
+    height: 460px;
+    background-color: black;
+    margin-top: 40px;
+}
+.foter_container {
+    max-width: 75%;
+    height: 460px;
+}
+.foter_bottom {
+    padding-left: 13%;
+    background-color: black;
+    height: 62px;
+    color: white;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid white;
+    vertical-align: baseline;
+    font: inherit;
+    font-size: 12px;
+}
+.foter_logo {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.subscribe_foter {
+    color: white;
+    width: 25%;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.white_logo_woodmart {
+    background-image: url(../../public/images/blog_pictures/furniture-logo-white.svg);
+    height: 150px;
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    width: 20%;
+}
+.footer_facebook {
+    background-image: url(../../public/images/blog_pictures/icons8-facebook-30.png);
+    height: 30px;
+    width: 40px;
+    color: black;
+    background-position: 5px;
+    background-repeat: no-repeat;
+}
+.footer_x {
+    background-image: url(../../public/images/blog_pictures/icons8-x.svg);
+    height: 30px;
+    width: 40px;
+    color: black;
+    background-position: 8px;
+    background-repeat: no-repeat;
+}
+.footer_pinterest {
+    background-image: url(../../public/images/blog_pictures/icons8-pinterest.svg);
+    height: 30px;
+    width: 40px;
+    color: black;
+    background-position: 9px;
+    background-repeat: no-repeat;
+}
+.footer_linkedin {
+    background-image: url(../../public/images/blog_pictures/icons8-linkedin.svg);
+    height: 30px;
+    width: 40px;
+    color: black;
+    background-position: 9px;
+    background-repeat: no-repeat;
+}
+.footer_menu {
+    height: 245px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.useful_links{
+    width: 25%;
+    color: white;
+}
+.useful_links p {
+    color: rgb(158, 155, 155);
+    font-size: 14px;
+}
+.categories_footer {
+    width: 25%;
+    color: white;
+}
+.categories_footer p {
+    color: rgb(158, 155, 155);
+    font-size: 14px;
+}
+.other_menu {
+    width: 25%;
+    color: black;
+}
+.other_menu p {
+    color: rgb(158, 155, 155);
+    font-size: 14px;
+}
+.downloan_app {
+    width: 25%;
+    color: white;
+    height: 245px;
+}
+.discount_footer {
+    font-size: 12px;
+}
+.discount_elements {
+    display: flex;
+
+}
+.discount_google {
+    background-image: url(../../public/images/blog_pictures/google-play.svg);
+    width: 135px;
+    height: 40px;
+    margin-top: 10px;
+}
+.discount_app {
+    background-image: url(../../public/images/blog_pictures/app-store.svg);
+    width: 120px;
+    height: 40px;
+    margin-left: 40px;
+    margin-top: 10px;
+}

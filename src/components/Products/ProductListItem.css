@@ -68,3 +68,7 @@
     background-color: rgb(245, 154, 87);
     border: none;
 }
+.like_button {
+    border: none;
+    background-color: white;
+}

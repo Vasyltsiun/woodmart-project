@@ -33,6 +33,7 @@ const ArmchairsPage = ({ category }: Props) => {
                             className="products_size"
                         >
                             <ProductListItem
+                                id={id}
                                 title={title}
                                 type={type}
                                 price={price}

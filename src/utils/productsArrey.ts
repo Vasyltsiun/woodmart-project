@@ -90,7 +90,7 @@ export const productsArrey: Product[] = [
     },
 
     {
-        id: 14,
+        id: 11,
         title: 'Curve',
         type: 'Chairs',
         price: 320.0,
@@ -98,7 +98,7 @@ export const productsArrey: Product[] = [
         category: 'chairs',
     },
     {
-        id: 15,
+        id: 12,
         title: 'Revolt',
         type: 'Chairs',
         price: 275.0,
@@ -106,7 +106,7 @@ export const productsArrey: Product[] = [
         category: 'chairs',
     },
     {
-        id: 15,
+        id: 13,
         title: 'Avana',
         type: 'Chairs',
         price: 458.0,
@@ -114,7 +114,7 @@ export const productsArrey: Product[] = [
         category: 'chairs',
     },
     {
-        id: 15,
+        id: 14,
         title: 'Ipanema',
         type: 'Chairs',
         price: 540.0,
@@ -130,7 +130,7 @@ export const productsArrey: Product[] = [
         category: 'chairs',
     },
     {
-        id: 4,
+        id: 16,
         title: 'Henry',
         type: 'Tablets',
         price: 2091,
@@ -138,7 +138,7 @@ export const productsArrey: Product[] = [
         category: 'tablets',
     },
     {
-        id: 4,
+        id: 17,
         title: 'Segmented',
         type: 'Tablets',
         price: 3200,
@@ -146,7 +146,7 @@ export const productsArrey: Product[] = [
         category: 'tablets',
     },
     {
-        id: 7,
+        id: 18,
         title: 'Bitta',
         type: 'Tablets',
         price: 1519,
@@ -154,7 +154,7 @@ export const productsArrey: Product[] = [
         category: 'tablets',
     },
     {
-        id: 15,
+        id: 19,
         title: 'Meda Morph',
         type: 'Tablets',
         price: 350,
@@ -162,7 +162,7 @@ export const productsArrey: Product[] = [
         category: 'tablets',
     },
     {
-        id: 15,
+        id: 20,
         title: 'EM Table',
         type: 'Chairs',
         price: 1950.0,
@@ -170,7 +170,7 @@ export const productsArrey: Product[] = [
         category: 'tablets',
     },
     {
-        id: 15,
+        id: 21,
         title: 'Twible',
         type: 'Sofas',
         price: 2800.0,
@@ -178,7 +178,7 @@ export const productsArrey: Product[] = [
         category: 'sofas',
     },
     {
-        id: 15,
+        id: 22,
         title: 'Angel',
         type: 'Sofas',
         price: 2100.0,
@@ -186,7 +186,7 @@ export const productsArrey: Product[] = [
         category: 'sofas',
     },
     {
-        id: 15,
+        id: 23,
         title: 'Polder',
         type: 'Sofas',
         price: 1876.0,
@@ -194,7 +194,7 @@ export const productsArrey: Product[] = [
         category: 'sofas',
     },
     {
-        id: 15,
+        id: 24,
         title: 'Navona',
         type: 'Sofas',
         price: 1669.0,
@@ -202,7 +202,7 @@ export const productsArrey: Product[] = [
         category: 'sofas',
     },
     {
-        id: 15,
+        id: 25,
         title: 'Fellini',
         type: 'Sofas',
         price: 2760.0,
@@ -210,7 +210,7 @@ export const productsArrey: Product[] = [
         category: 'sofas',
     },
     {
-        id: 15,
+        id: 26,
         title: 'Quilt',
         type: 'Armchairs',
         price: 1259,
@@ -218,7 +218,7 @@ export const productsArrey: Product[] = [
         category: 'armchairs',
     },
     {
-        id: 15,
+        id: 27,
         title: 'Sendai',
         type: 'Armchairs',
         price: 679.0,
@@ -226,7 +226,7 @@ export const productsArrey: Product[] = [
         category: 'armchairs',
     },
     {
-        id: 15,
+        id: 28,
         title: 'Lima',
         type: 'Armchairs',
         price: 460.0,
@@ -234,7 +234,7 @@ export const productsArrey: Product[] = [
         category: 'armchairs',
     },
     {
-        id: 15,
+        id: 29,
         title: 'Mercury',
         type: 'Armchairs',
         price: 1300,
@@ -242,7 +242,7 @@ export const productsArrey: Product[] = [
         category: 'armchairs',
     },
     {
-        id: 15,
+        id: 30,
         title: 'Daiki Studio',
         type: 'Armchairs',
         price: 1300,

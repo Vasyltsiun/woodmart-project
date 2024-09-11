@@ -9,8 +9,8 @@ import Search from '../components/Menu/Search'
 import Compare from '../components/Menu/Compare'
 import Wishlist from '../components/Menu/Wishlist'
 import Login from '../components/Menu/Login'
-import Card from '../components/Menu/Card'
 import './Header.css'
+import CartHeader from 'components/CartHeader/CartHeader'
 
 type Props = {}
 
@@ -33,7 +33,7 @@ const Header = (props: Props) => {
                         <Compare />
                         <Wishlist />
                         <Login />
-                        <Card />
+                        <CartHeader />
                     </Toolbar>
                 </Container>
             </AppBar>

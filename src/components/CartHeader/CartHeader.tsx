@@ -1,7 +1,7 @@
-import './Card.css'
+import './CartHeader.css'
 
 type Props = {}
-const Card = (props: Props) => {
+const CartHeader = (props: Props) => {
     return (
         <div className="card_button">
             <div className="card_basket"></div>
@@ -10,4 +10,4 @@ const Card = (props: Props) => {
         </div>
     )
 }
-export default Card
+export default CartHeader

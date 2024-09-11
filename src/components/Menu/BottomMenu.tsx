@@ -1,9 +1,15 @@
 import { Container, Toolbar } from '@mui/material'
 import './BottomMenu.css'
 import MenuItem from './MenuItem'
+import CartHeader from 'components/CartHeader/CartHeader'
 
-type Props = {}
-const BottomMenu = (props: Props) => {
+type Props = {
+    cartData: {
+        totalCount: number
+        totalPrice: number
+    }
+}
+const BottomMenu = ({ cartData }: Props) => {
     return (
         <Container className="main_container" sx={{ padding: '0px' }}>
             <Toolbar className="all_bottom_menu">
@@ -42,6 +48,9 @@ const BottomMenu = (props: Props) => {
                         <li className="decor">Decor</li>
                     </MenuItem>
                 </ul>
+                <MenuItem to="/cart">
+                    <CartHeader cartData={cartData} />
+                </MenuItem>
                 <div className="btn_free_shipping">
                     <a href="free_shipping">
                         Free shipping for all orders of $1.300

@@ -12,6 +12,7 @@ import '../components/Menu/BottomMenu.css'
 import SofasPage from 'pages/Sofas/SofasPage'
 import ArmchairsPage from 'pages/Armchairs/ArmchairsPage'
 import { useState } from 'react'
+import CartPage from 'pages/Cart/CartPage'
 
 type CartDataType = {
     totalCount: number
@@ -24,15 +25,22 @@ const App = () => {
         totalPrice: 0,
     })
 
+    const addProductToCart = (count: number, price: number) => {
+        setCartData((prevState) => ({
+            totalCount: prevState.totalCount + count,
+            totalPrice: prevState.totalPrice + count * price,
+        }))
+    }
+
     return (
         <StyledEngineProvider injectFirst>
             <CssBaseline />
-            <Header cartData={cartData} />
+            <Header />
             <Toolbar
                 className="middle_header"
                 sx={{ width: '80%', padding: '100px' }}
             >
-                <BottomMenu />
+                <BottomMenu cartData={cartData} />
             </Toolbar>
             <Routes>
                 <Route path="/" element={<Home />}></Route>
@@ -49,6 +57,7 @@ const App = () => {
                     path="armchairs"
                     element={<ArmchairsPage category="armchairs" />}
                 />
+                <Route path="cart" element={<CartPage />} />
             </Routes>
             <Footer />
         </StyledEngineProvider>

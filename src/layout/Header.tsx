@@ -5,21 +5,14 @@ import Logo from '../components/Logo/Logo'
 import Menu from '../components/Menu/Menu'
 import Avatar from '../components/Menu/Avatar'
 import Search from '../components/Menu/Search'
-
 import Compare from '../components/Menu/Compare'
 import Wishlist from '../components/Menu/Wishlist'
 import Login from '../components/Menu/Login'
 import './Header.css'
-import CartHeader from 'components/CartHeader/CartHeader'
 
-type Props = {
-    cartData: {
-        totalCount: number
-        totalPrice: number
-    }
-}
+type Props = {}
 
-const Header = ({ cartData }: Props) => {
+const Header = (props: Props) => {
     return (
         <>
             {' '}
@@ -38,7 +31,6 @@ const Header = ({ cartData }: Props) => {
                         <Compare />
                         <Wishlist />
                         <Login />
-                        <CartHeader cartData={cartData} />
                     </Toolbar>
                 </Container>
             </AppBar>

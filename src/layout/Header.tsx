@@ -12,9 +12,14 @@ import Login from '../components/Menu/Login'
 import './Header.css'
 import CartHeader from 'components/CartHeader/CartHeader'
 
-type Props = {}
+type Props = {
+    cartData: {
+        totalCount: number
+        totalPrice: number
+    }
+}
 
-const Header = (props: Props) => {
+const Header = ({ cartData }: Props) => {
     return (
         <>
             {' '}
@@ -33,7 +38,7 @@ const Header = (props: Props) => {
                         <Compare />
                         <Wishlist />
                         <Login />
-                        <CartHeader />
+                        <CartHeader cartData={cartData} />
                     </Toolbar>
                 </Container>
             </AppBar>

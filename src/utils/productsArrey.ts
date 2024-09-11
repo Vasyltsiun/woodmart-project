@@ -250,3 +250,12 @@ export const productsArrey: Product[] = [
         category: 'armchairs',
     },
 ]
+
+export const getProductsObject = (array: Product[]) =>
+    array.reduce(
+        (obj, product) => ({
+            ...obj,
+            [product.id]: product,
+        }),
+        {}
+    )

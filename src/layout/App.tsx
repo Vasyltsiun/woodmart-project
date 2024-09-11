@@ -11,12 +11,23 @@ import BottomMenu from 'components/Menu/BottomMenu'
 import '../components/Menu/BottomMenu.css'
 import SofasPage from 'pages/Sofas/SofasPage'
 import ArmchairsPage from 'pages/Armchairs/ArmchairsPage'
+import { useState } from 'react'
+
+type CartDataType = {
+    totalCount: number
+    totalPrice: number
+}
 
 const App = () => {
+    const [cartData, setCartData] = useState<CartDataType>({
+        totalCount: 0,
+        totalPrice: 0,
+    })
+
     return (
         <StyledEngineProvider injectFirst>
             <CssBaseline />
-            <Header />
+            <Header cartData={cartData} />
             <Toolbar
                 className="middle_header"
                 sx={{ width: '80%', padding: '100px' }}

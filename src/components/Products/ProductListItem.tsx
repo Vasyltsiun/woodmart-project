@@ -12,6 +12,7 @@ type Props = {
     image: string
     type: string
     price: number
+    count: number
     addProductToCart: (id: number, count: number) => void
 }
 const ProductListItem = ({
@@ -20,7 +21,7 @@ const ProductListItem = ({
     type,
     price,
     id,
-
+    count,
     addProductToCart,
 }: Props) => {
     const isLiked = useAppSelector((state) => state.productsLikeState[id])
@@ -48,7 +49,7 @@ const ProductListItem = ({
                 <div className="btns-wrapper">
                     <Button
                         variant="outlined"
-                        onClick={() => addProductToCart(id, price)}
+                        onClick={() => addProductToCart(count, price)}
                     >
                         Add to cart
                     </Button>

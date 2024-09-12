@@ -26,7 +26,7 @@ const TabletsPage = ({ category, addProductToCart }: Props) => {
             <Grid container spacing={2} xs={10}>
                 {productsArrey
                     .filter((item) => item.category === category)
-                    .map(({ id, title, type, price, image }) => (
+                    .map(({ id, title, type, price, image, count }) => (
                         <Grid
                             item
                             xs={12}
@@ -41,6 +41,7 @@ const TabletsPage = ({ category, addProductToCart }: Props) => {
                                 type={type}
                                 price={price}
                                 image={image}
+                                count={count}
                                 addProductToCart={addProductToCart}
                             />
                         </Grid>

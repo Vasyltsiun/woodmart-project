@@ -14,8 +14,14 @@ const CartHeader = ({ productsInCart }: Props) => {
     return (
         <div className="card_button">
             <div className="card_basket"></div>
-            <div className="amount">$</div>
-            <div className="quantity"></div>
+            {Object.keys(productsInCart).map((productId) => (
+                <div className="amount" key={productId}>
+                    ${productsInCart[+productId]}
+                </div>
+            ))}
+            {Object.keys(productsInCart).map((productId) => (
+                <div className="quantity">{productId}</div>
+            ))}
         </div>
     )
 }

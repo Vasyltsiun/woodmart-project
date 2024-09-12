@@ -19,8 +19,8 @@ const CartHeader = ({ productsInCart }: Props) => {
                     ${productsInCart[+productId]}
                 </div>
             ))}
-            {Object.keys(productsInCart).map((productId) => (
-                <div className="quantity">{productId}</div>
+            {Object.keys(productsInCart).map((count) => (
+                <div className="quantity">{count}</div>
             ))}
         </div>
     )

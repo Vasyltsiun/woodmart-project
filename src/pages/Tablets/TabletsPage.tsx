@@ -4,8 +4,9 @@ import { productsArrey } from 'utils/productsArrey'
 
 type Props = {
     category: string
+    addProductToCart: (id: number, count: number) => void
 }
-const TabletsPage = ({ category }: Props) => {
+const TabletsPage = ({ category, addProductToCart }: Props) => {
     return (
         <>
             <Typography
@@ -40,6 +41,7 @@ const TabletsPage = ({ category }: Props) => {
                                 type={type}
                                 price={price}
                                 image={image}
+                                addProductToCart={addProductToCart}
                             />
                         </Grid>
                     ))}

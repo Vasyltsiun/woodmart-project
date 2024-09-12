@@ -5,6 +5,7 @@ import './ProductListItem.css'
 import { useAppSelector } from 'store/hooks'
 import { useDispatch } from 'react-redux'
 import { addLike, removeLike } from 'store/likeSlice'
+import { count } from 'console'
 
 type Props = {
     id: number
@@ -12,8 +13,17 @@ type Props = {
     image: string
     type: string
     price: number
+    addProductToCart: (id: number, count: number) => void
 }
-const ProductListItem = ({ title, image, type, price, id }: Props) => {
+const ProductListItem = ({
+    title,
+    image,
+    type,
+    price,
+    id,
+
+    addProductToCart,
+}: Props) => {
     const isLiked = useAppSelector((state) => state.productsLikeState[id])
     const dispatch = useDispatch()
 
@@ -37,7 +47,12 @@ const ProductListItem = ({ title, image, type, price, id }: Props) => {
                 <div className="product-features">{type}</div>
                 <div className="product-price">$ {price}</div>
                 <div className="btns-wrapper">
-                    <Button variant="outlined">Add to cart</Button>
+                    <Button
+                        variant="outlined"
+                        onClick={() => addProductToCart(id, price)}
+                    >
+                        Add to cart
+                    </Button>
                 </div>
             </CardContent>
         </Card>

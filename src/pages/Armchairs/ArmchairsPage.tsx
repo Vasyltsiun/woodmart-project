@@ -2,8 +2,11 @@ import { Grid, Typography } from '@mui/material'
 import ProductListItem from 'components/Products/ProductListItem'
 import { productsArrey } from 'utils/productsArrey'
 
-type Props = { category: string }
-const ArmchairsPage = ({ category }: Props) => {
+type Props = {
+    category: string
+    addProductToCart: (id: number, count: number) => void
+}
+const ArmchairsPage = ({ category, addProductToCart }: Props) => {
     return (
         <>
             <Typography
@@ -38,6 +41,7 @@ const ArmchairsPage = ({ category }: Props) => {
                                 type={type}
                                 price={price}
                                 image={image}
+                                addProductToCart={addProductToCart}
                             />
                         </Grid>
                     ))}

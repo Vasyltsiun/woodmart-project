@@ -5,9 +5,9 @@ import SliderMain from 'components/SliderMain/SliderMain'
 
 console.log(productsArrey)
 
-type Props = {}
+type Props = { addProductToCart: (id: number, count: number) => void }
 
-const ProductsList = (props: Props) => {
+const ProductsList = ({ addProductToCart }: Props) => {
     return (
         <>
             <SliderMain />
@@ -36,6 +36,7 @@ const ProductsList = (props: Props) => {
                                 price={price}
                                 image={image}
                                 id={id}
+                                addProductToCart={addProductToCart}
                             />
                         </Grid>
                     ))}

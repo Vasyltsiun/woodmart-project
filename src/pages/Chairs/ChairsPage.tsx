@@ -5,8 +5,9 @@ import ProductListItem from 'components/Products/ProductListItem'
 
 type Props = {
     category: string
+    addProductToCart: (id: number, count: number) => void
 }
-const ChairsPage = ({ category }: Props) => {
+const ChairsPage = ({ category, addProductToCart }: Props) => {
     return (
         <>
             <Typography
@@ -41,6 +42,7 @@ const ChairsPage = ({ category }: Props) => {
                                 type={type}
                                 price={price}
                                 image={image}
+                                addProductToCart={addProductToCart}
                             />
                         </Grid>
                     ))}

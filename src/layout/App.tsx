@@ -14,21 +14,20 @@ import ArmchairsPage from 'pages/Armchairs/ArmchairsPage'
 import { useState } from 'react'
 import CartPage from 'pages/Cart/CartPage'
 
-type CartDataType = {
-    totalCount: number
-    totalPrice: number
+type ProductsInCartType = {
+    [id: number]: number
 }
 
 const App = () => {
-    const [cartData, setCartData] = useState<CartDataType>({
-        totalCount: 0,
-        totalPrice: 0,
+    const [ProductsInCart, setProductsInCart] = useState<ProductsInCartType>({
+        1: 5,
+        2: 5,
     })
 
-    const addProductToCart = (count: number, price: number) => {
-        setCartData((prevState) => ({
-            totalCount: prevState.totalCount + count,
-            totalPrice: prevState.totalPrice + count * price,
+    const addProductToCart = (id: number, count: number) => {
+        setProductsInCart((prevState) => ({
+            ...prevState,
+            [id]: (prevState[id] || 0) + count,
         }))
     }
 
@@ -40,22 +39,48 @@ const App = () => {
                 className="middle_header"
                 sx={{ width: '80%', padding: '100px' }}
             >
-                <BottomMenu cartData={cartData} />
+                <BottomMenu ProductsInCart={ProductsInCart} />
             </Toolbar>
             <Routes>
-                <Route path="/" element={<Home />}></Route>
+                <Route
+                    path="/"
+                    element={<Home addProductToCart={addProductToCart} />}
+                ></Route>
                 <Route
                     path="chairs"
-                    element={<ChairsPage category="chairs" />}
+                    element={
+                        <ChairsPage
+                            category="chairs"
+                            addProductToCart={addProductToCart}
+                        />
+                    }
                 />
                 <Route
                     path="tablets"
-                    element={<TabletsPage category="tablets" />}
+                    element={
+                        <TabletsPage
+                            category="tablets"
+                            addProductToCart={addProductToCart}
+                        />
+                    }
                 />
-                <Route path="sofas" element={<SofasPage category="sofas" />} />
+                <Route
+                    path="sofas"
+                    element={
+                        <SofasPage
+                            category="sofas"
+                            addProductToCart={addProductToCart}
+                        />
+                    }
+                />
                 <Route
                     path="armchairs"
-                    element={<ArmchairsPage category="armchairs" />}
+                    element={
+                        <ArmchairsPage
+                            category="armchairs"
+                            addProductToCart={addProductToCart}
+                        />
+                    }
                 />
                 <Route path="cart" element={<CartPage />} />
             </Routes>

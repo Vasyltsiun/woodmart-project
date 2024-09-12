@@ -5,7 +5,6 @@ import './ProductListItem.css'
 import { useAppSelector } from 'store/hooks'
 import { useDispatch } from 'react-redux'
 import { addLike, removeLike } from 'store/likeSlice'
-import { count } from 'console'
 
 type Props = {
     id: number

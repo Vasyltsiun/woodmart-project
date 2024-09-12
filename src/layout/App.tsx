@@ -19,7 +19,7 @@ type ProductsInCartType = {
 }
 
 const App = () => {
-    const [ProductsInCart, setProductsInCart] = useState<ProductsInCartType>({
+    const [productsInCart, setProductsInCart] = useState<ProductsInCartType>({
         1: 5,
         2: 5,
     })
@@ -39,7 +39,7 @@ const App = () => {
                 className="middle_header"
                 sx={{ width: '80%', padding: '100px' }}
             >
-                <BottomMenu ProductsInCart={ProductsInCart} />
+                <BottomMenu productsInCart={productsInCart} />
             </Toolbar>
             <Routes>
                 <Route

@@ -21,7 +21,9 @@ const CartHeader = ({ productsInCart }: Props) => {
                     ${productsInCart[+productId]}
                 </div>
             ))}
-            <CartProductList productsInCart={productsInCart} />
+            {Object.keys(productsInCart).map((count) => (
+                <div className="quantity">{count}</div>
+            ))}
         </div>
     )
 }

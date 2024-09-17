@@ -1,5 +1,6 @@
 import { getProductsObject, productsArrey } from 'utils/productsArrey'
 import './CartHeader.css'
+import CartTotal from 'components/CartTotal/CartTotal'
 
 type Props = {
     productsInCart: {
@@ -14,11 +15,7 @@ const CartHeader = ({ productsInCart }: Props) => {
     return (
         <div className="card_button">
             <div className="card_basket"></div>
-            {Object.keys(productsInCart).map((productId) => (
-                <div className="amount" key={productId}>
-                    ${productsInCart[+productId]}
-                </div>
-            ))}
+            <CartTotal productsInCart={productsInCart} />
             {Object.keys(productsInCart).map((count) => (
                 <div className="quantity">{count}</div>
             ))}

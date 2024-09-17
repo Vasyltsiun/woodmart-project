@@ -79,7 +79,10 @@ const App = () => {
                         />
                     }
                 />
-                <Route path="cart" element={<CartPage />} />
+                <Route
+                    path="cart"
+                    element={<CartPage productsInCart={productsInCart} />}
+                />
             </Routes>
             <Footer />
         </StyledEngineProvider>

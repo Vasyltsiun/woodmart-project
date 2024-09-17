@@ -1,4 +1,5 @@
 import { Container } from '@mui/material'
+import CartProductList from 'components/CartProductList/CartProductList'
 import CartTotal from 'components/CartTotal/CartTotal'
 
 type Props = {
@@ -11,12 +12,9 @@ const CartPage = ({ productsInCart }: Props) => {
         <div>
             <Container>
                 <div>Cart</div>
-                <div className="card_button">
-                    <div className="card_basket"></div>
+                <div className="cart_total">
                     <CartTotal productsInCart={productsInCart} />
-                    {Object.keys(productsInCart).map((count) => (
-                        <div className="quantity">{count}</div>
-                    ))}
+                    <CartProductList productsInCart={productsInCart} />
                 </div>
             </Container>
         </div>

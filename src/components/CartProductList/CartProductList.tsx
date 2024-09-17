@@ -8,16 +8,15 @@ type Props = {
 
 const productsObject = getProductsObject(productsArrey)
 console.log(productsObject)
-const CartTotal = ({ productsInCart }: Props) => {
+
+const CartProductList = ({ productsInCart }: Props) => {
     return (
         <div>
-            Total:{' '}
-            {Object.keys(productsInCart).map((productId) => (
-                <div className="amount" key={productId}>
-                    ${productsInCart[+productId]}
-                </div>
+            {' '}
+            {Object.keys(productsInCart).map((count) => (
+                <div className="quantity">{count}</div>
             ))}
         </div>
     )
 }
-export default CartTotal
+export default CartProductList

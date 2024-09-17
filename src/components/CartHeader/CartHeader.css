@@ -45,3 +45,17 @@
     -o-border-radius: 50%;
     box-shadow: 1px 1px 2px 1px rgb(196, 195, 195);
 }
+.cart_total {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 40px;
+    background-color: red;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-right: 20px;
+
+}

@@ -1,8 +1,6 @@
 import { getProductsObject, productsArrey } from 'utils/productsArrey'
 import './CartHeader.css'
 
-import CartProductList from 'components/CartProductList/CartProductList'
-
 type Props = {
     productsInCart: {
         [id: number]: number

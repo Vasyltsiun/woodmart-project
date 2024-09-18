@@ -5,9 +5,9 @@ import SliderMain from 'components/SliderMain/SliderMain'
 
 console.log(productsArrey)
 
-type Props = { addProductToCart: (id: number, count: number) => void }
+type Props = {}
 
-const ProductsList = ({ addProductToCart }: Props) => {
+const ProductsList = (props: Props) => {
     return (
         <>
             <SliderMain />
@@ -28,7 +28,7 @@ const ProductsList = ({ addProductToCart }: Props) => {
             <Grid container spacing={2}>
                 {productsArrey
                     .filter((item) => item.category === 'home')
-                    .map(({ id, title, type, price, image, count }) => (
+                    .map(({ id, title, type, price, image }) => (
                         <Grid item xs={12} sm={6} lg={4} key={id}>
                             <ProductListItem
                                 title={title}
@@ -36,8 +36,6 @@ const ProductsList = ({ addProductToCart }: Props) => {
                                 price={price}
                                 image={image}
                                 id={id}
-                                count={count}
-                                addProductToCart={addProductToCart}
                             />
                         </Grid>
                     ))}

@@ -5,10 +5,8 @@ import ProductListItem from 'components/Products/ProductListItem'
 
 type Props = {
     category: string
-
-    addProductToCart: (id: number, count: number) => void
 }
-const ChairsPage = ({ category, addProductToCart }: Props) => {
+const ChairsPage = ({ category }: Props) => {
     return (
         <>
             <Typography
@@ -28,7 +26,7 @@ const ChairsPage = ({ category, addProductToCart }: Props) => {
             <Grid container spacing={2} xs={10}>
                 {productsArrey
                     .filter((item) => item.category === category)
-                    .map(({ id, title, type, price, image, count }) => (
+                    .map(({ id, title, type, price, image }) => (
                         <Grid
                             item
                             xs={12}
@@ -43,8 +41,6 @@ const ChairsPage = ({ category, addProductToCart }: Props) => {
                                 type={type}
                                 price={price}
                                 image={image}
-                                count={count}
-                                addProductToCart={addProductToCart}
                             />
                         </Grid>
                     ))}

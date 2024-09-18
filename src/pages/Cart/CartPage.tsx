@@ -4,14 +4,9 @@ import CartProductListItemExtended from 'components/CartProductList/CartProductL
 import CartTotal from 'components/CartTotal/CartTotal'
 import { useAppSelector } from 'store/hooks'
 
-type Props = {
-    productsInCart: {
-        [id: number]: number
-    }
-    removeProductsFromCart: (id: number) => void
-    changeProductQuantity: (id: number, quantity: number) => void
-}
-const CartPage = ({ removeProductsFromCart, changeProductQuantity }: Props) => {
+type Props = {}
+
+const CartPage = (props: Props) => {
     const productsInCart = useAppSelector((state) => state.productsInCart)
     return (
         <div>
@@ -27,8 +22,6 @@ const CartPage = ({ removeProductsFromCart, changeProductQuantity }: Props) => {
                     <CartProductList
                         productsInCart={productsInCart}
                         CartItem={CartProductListItemExtended}
-                        removeProductsFromCart={removeProductsFromCart}
-                        changeProductQuantity={changeProductQuantity}
                     />
                 </Grid>
                 <div className="cart_total">

@@ -2,11 +2,7 @@ import { getProductsObject, productsArrey } from 'utils/productsArrey'
 import './CartHeader.css'
 import { useAppSelector } from 'store/hooks'
 
-type Props = {
-    productsInCart: {
-        [id: number]: number
-    }
-}
+type Props = {}
 
 const productsObject = getProductsObject(productsArrey)
 console.log(productsObject)

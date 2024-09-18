@@ -15,34 +15,7 @@ import { useState } from 'react'
 import CartPage from 'pages/Cart/CartPage'
 import { omit, Omit } from 'lodash'
 
-type ProductsInCartType = {
-    [id: number]: number
-}
-
 const App = () => {
-    const [productsInCart, setProductsInCart] = useState<ProductsInCartType>({
-        4: 5,
-        5: 6,
-    })
-
-    const addProductToCart = (id: number, count: number) => {
-        setProductsInCart((prevState) => ({
-            ...prevState,
-            [id]: (prevState[id] || 0) + count,
-        }))
-    }
-
-    const removeProductsFromCart = (id: number) => {
-        setProductsInCart((prevState) => omit(prevState, [id]))
-    }
-
-    const changeProductQuantity = (id: number, quantity: number) => {
-        setProductsInCart((prevState) => ({
-            ...prevState,
-            [id]: quantity,
-        }))
-    }
-
     return (
         <StyledEngineProvider injectFirst>
             <CssBaseline />
@@ -51,59 +24,24 @@ const App = () => {
                 className="middle_header"
                 sx={{ width: '80%', padding: '100px' }}
             >
-                <BottomMenu productsInCart={productsInCart} />
+                <BottomMenu />
             </Toolbar>
             <Routes>
-                <Route
-                    path="/"
-                    element={<Home addProductToCart={addProductToCart} />}
-                ></Route>
+                <Route path="/" element={<Home />}></Route>
                 <Route
                     path="chairs"
-                    element={
-                        <ChairsPage
-                            category="chairs"
-                            addProductToCart={addProductToCart}
-                        />
-                    }
+                    element={<ChairsPage category="chairs" />}
                 />
                 <Route
                     path="tablets"
-                    element={
-                        <TabletsPage
-                            category="tablets"
-                            addProductToCart={addProductToCart}
-                        />
-                    }
+                    element={<TabletsPage category="tablets" />}
                 />
-                <Route
-                    path="sofas"
-                    element={
-                        <SofasPage
-                            category="sofas"
-                            addProductToCart={addProductToCart}
-                        />
-                    }
-                />
+                <Route path="sofas" element={<SofasPage category="sofas" />} />
                 <Route
                     path="armchairs"
-                    element={
-                        <ArmchairsPage
-                            category="armchairs"
-                            addProductToCart={addProductToCart}
-                        />
-                    }
+                    element={<ArmchairsPage category="armchairs" />}
                 />
-                <Route
-                    path="cart"
-                    element={
-                        <CartPage
-                            productsInCart={productsInCart}
-                            removeProductsFromCart={removeProductsFromCart}
-                            changeProductQuantity={changeProductQuantity}
-                        />
-                    }
-                />
+                <Route path="cart" element={<CartPage />} />
             </Routes>
             <Footer />
         </StyledEngineProvider>

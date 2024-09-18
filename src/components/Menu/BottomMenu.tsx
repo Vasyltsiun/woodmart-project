@@ -3,12 +3,8 @@ import './BottomMenu.css'
 import MenuItem from './MenuItem'
 import CartHeader from 'components/CartHeader/CartHeader'
 
-type Props = {
-    productsInCart: {
-        [id: number]: number
-    }
-}
-const BottomMenu = ({ productsInCart }: Props) => {
+type Props = {}
+const BottomMenu = (props: Props) => {
     return (
         <Container className="main_container" sx={{ padding: '0px' }}>
             <Toolbar className="all_bottom_menu">
@@ -48,7 +44,7 @@ const BottomMenu = ({ productsInCart }: Props) => {
                     </MenuItem>
                 </ul>
                 <MenuItem to="/cart">
-                    <CartHeader productsInCart={productsInCart} />
+                    <CartHeader />
                 </MenuItem>
                 <div className="btn_free_shipping">
                     <a href="free_shipping">

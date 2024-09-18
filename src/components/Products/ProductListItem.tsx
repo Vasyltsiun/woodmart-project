@@ -5,6 +5,8 @@ import './ProductListItem.css'
 import { useAppSelector } from 'store/hooks'
 import { useDispatch } from 'react-redux'
 import { addLike, removeLike } from 'store/likeSlice'
+import { addProductToCart } from 'store/cartSlice'
+import { useState } from 'react'
 
 type Props = {
     id: number
@@ -12,18 +14,9 @@ type Props = {
     image: string
     type: string
     price: number
-    count: number
-    addProductToCart: (id: number, count: number) => void
 }
-const ProductListItem = ({
-    title,
-    image,
-    type,
-    price,
-    id,
-    count,
-    addProductToCart,
-}: Props) => {
+const ProductListItem = ({ title, image, type, price, id }: Props) => {
+    const [count, setCount] = useState<number>(1)
     const isLiked = useAppSelector((state) => state.productsLikeState[id])
     const dispatch = useDispatch()
 
@@ -49,7 +42,9 @@ const ProductListItem = ({
                 <div className="btns-wrapper">
                     <Button
                         variant="outlined"
-                        onClick={() => addProductToCart(count, price)}
+                        onClick={() =>
+                            dispatch(addProductToCart({ id, count }))
+                        }
                     >
                         Add to cart
                     </Button>

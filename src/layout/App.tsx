@@ -13,6 +13,7 @@ import SofasPage from 'pages/Sofas/SofasPage'
 import ArmchairsPage from 'pages/Armchairs/ArmchairsPage'
 import { useState } from 'react'
 import CartPage from 'pages/Cart/CartPage'
+import { omit, Omit } from 'lodash'
 
 type ProductsInCartType = {
     [id: number]: number
@@ -32,11 +33,7 @@ const App = () => {
     }
 
     const removeProductsFromCart = (id: number) => {
-        setProductsInCart((prevState) => {
-            let prevProductsInCart = { ...prevState }
-            delete prevProductsInCart[id]
-            return prevProductsInCart
-        })
+        setProductsInCart((prevState) => omit(prevState, [id]))
     }
 
     const changeProductQuantity = (id: number, quantity: number) => {

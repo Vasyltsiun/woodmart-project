@@ -1,5 +1,6 @@
 import { getProductsObject, productsArrey } from 'utils/productsArrey'
 import './CartHeader.css'
+import { useAppSelector } from 'store/hooks'
 
 type Props = {
     productsInCart: {
@@ -10,7 +11,8 @@ type Props = {
 const productsObject = getProductsObject(productsArrey)
 console.log(productsObject)
 
-const CartHeader = ({ productsInCart }: Props) => {
+const CartHeader = (props: Props) => {
+    const productsInCart = useAppSelector((state) => state.productsInCart)
     return (
         <div className="card_button">
             <div className="card_basket"></div>

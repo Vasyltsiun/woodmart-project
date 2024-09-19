@@ -7,7 +7,6 @@ import { useDispatch } from 'react-redux'
 import { addLike, removeLike } from 'store/likeSlice'
 import { addProductToCart } from 'store/cartSlice'
 import { useState } from 'react'
-import Quantity from 'components/Quantity/Quantity'
 
 type Props = {
     id: number
@@ -17,7 +16,7 @@ type Props = {
     price: number
 }
 const ProductListItem = ({ title, image, type, price, id }: Props) => {
-    const [count, setCount] = useState<number>(1)
+    const [count] = useState<number>(1)
     const isLiked = useAppSelector((state) => state.productsLikeState[id])
     const dispatch = useDispatch()
 

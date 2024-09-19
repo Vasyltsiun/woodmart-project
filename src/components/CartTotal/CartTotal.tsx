@@ -13,16 +13,20 @@ const CartTotal = ({
     productsObject = getProductsObject(productsArrey),
 }: Props) => {
     return (
-        <div>
-            Total:{' '}
-            {Object.keys(productsInCart).reduce(
-                (total, productId) =>
-                    total +
-                    productsInCart[+productId] *
-                        productsObject[+productId].price,
-                0
-            )}
-            $
+        <div className="cart_total">
+            <p>Cart Totals</p>
+
+            <div>
+                Total:{' '}
+                {Object.keys(productsInCart).reduce(
+                    (total, productId) =>
+                        total +
+                        productsInCart[+productId] *
+                            productsObject[+productId].price,
+                    0
+                )}
+                $
+            </div>
         </div>
     )
 }

@@ -11,9 +11,8 @@ import BottomMenu from 'components/Menu/BottomMenu'
 import '../components/Menu/BottomMenu.css'
 import SofasPage from 'pages/Sofas/SofasPage'
 import ArmchairsPage from 'pages/Armchairs/ArmchairsPage'
-import { useState } from 'react'
+
 import CartPage from 'pages/Cart/CartPage'
-import { omit, Omit } from 'lodash'
 
 const App = () => {
     return (

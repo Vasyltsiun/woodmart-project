@@ -1,0 +1,32 @@
+.cart_products_extended {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.remove_button {
+    width: 10px;
+    height: 40px;
+}
+.MuiGrid-root {
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    padding-left: 8%;
+}
+.product_title {
+    width: 100px;
+    margin: 20px;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 20px;
+    font-size: 25px;
+}
+.product-img {
+    padding-right: 60px;
+}
+.product_count {
+    display: flex;
+    width: 300px;
+    padding-left: 60px;
+    font-size: 20px;
+}

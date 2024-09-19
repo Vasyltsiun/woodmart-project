@@ -21,7 +21,7 @@ const Quantity = ({
             >
                 -
             </Button>
-            <TextField size="small" value={1}></TextField>
+            <TextField size="small" value={count}></TextField>
             <Button variant="outlined" onClick={onIncrementClick}>
                 +
             </Button>

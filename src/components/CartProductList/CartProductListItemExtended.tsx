@@ -18,14 +18,14 @@ const CartProductListItemExtended = ({ product, productsCount }: Props) => {
     )
     const dispatch = useAppDispatch()
     return (
-        <Grid item xs={12} sm={6} md={3}>
+        <Grid item xs={12} sm={6} md={4}>
             <Card variant="outlined">
                 <CardContent>
-                    <div>
+                    <div className="product-img">
                         <img src={product.image} alt="" />
                     </div>
-                    <button
-                        className="like_button"
+                    <Button
+                        variant="outlined"
                         onClick={() => {
                             isLiked
                                 ? dispatch(removeLike(product.id))
@@ -33,9 +33,9 @@ const CartProductListItemExtended = ({ product, productsCount }: Props) => {
                         }}
                     >
                         {isLiked ? <FavoriteIcon /> : <FavoriteBorderIcon />}
-                    </button>
+                    </Button>
                     <div>{product.title}</div>
-                    <p>Price fore one item: {product.price}</p>
+                    <p>Price for one item:{product.price}</p>
                     <div>Count: {productsCount}</div>
                     <Quantity
                         count={productsCount}

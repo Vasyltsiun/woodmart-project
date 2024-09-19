@@ -7,6 +7,7 @@ import { useDispatch } from 'react-redux'
 import { addLike, removeLike } from 'store/likeSlice'
 import { addProductToCart } from 'store/cartSlice'
 import { useState } from 'react'
+import Quantity from 'components/Quantity/Quantity'
 
 type Props = {
     id: number
@@ -39,6 +40,7 @@ const ProductListItem = ({ title, image, type, price, id }: Props) => {
                 <h3 className="product-title">{title}</h3>
                 <div className="product-features">{type}</div>
                 <div className="product-price">$ {price}</div>
+
                 <div className="btns-wrapper">
                     <Button
                         variant="outlined"

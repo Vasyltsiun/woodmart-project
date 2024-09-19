@@ -5,7 +5,6 @@ export type Product = {
     price: number
     image: string
     category?: string
-    count: number
 }
 
 export const productsArrey: Product[] = [
@@ -16,7 +15,6 @@ export const productsArrey: Product[] = [
         price: 320.0,
         image: 'images/blog_pictures/curve_chair.jpeg',
         category: 'home',
-        count: 1,
     },
     {
         id: 2,
@@ -25,7 +23,6 @@ export const productsArrey: Product[] = [
         price: 2100.0,
         image: 'images/blog_pictures/can_sofas.jpeg',
         category: 'home',
-        count: 1,
     },
     {
         id: 3,
@@ -34,7 +31,6 @@ export const productsArrey: Product[] = [
         price: 680,
         image: 'images/blog_pictures/belt_armchairs.jpeg',
         category: 'home',
-        count: 1,
     },
     {
         id: 4,
@@ -43,7 +39,6 @@ export const productsArrey: Product[] = [
         price: 449,
         image: 'images/blog_pictures/giro-LR_tablets.jpeg',
         category: 'home',
-        count: 1,
     },
     {
         id: 5,
@@ -52,7 +47,6 @@ export const productsArrey: Product[] = [
         price: 440,
         image: 'images/blog_pictures/soft_edge_chairs.jpeg',
         category: 'home',
-        count: 1,
     },
     {
         id: 6,
@@ -61,7 +55,6 @@ export const productsArrey: Product[] = [
         price: 1890,
         image: 'images/blog_pictures/palissade_sofas.jpeg',
         category: 'home',
-        count: 1,
     },
     {
         id: 7,
@@ -70,7 +63,6 @@ export const productsArrey: Product[] = [
         price: 1519,
         image: 'images/blog_pictures/bitta_tablets.jpeg',
         category: 'home',
-        count: 1,
     },
     {
         id: 8,
@@ -79,7 +71,6 @@ export const productsArrey: Product[] = [
         price: 1600,
         image: 'images/blog_pictures/albert_armchairs.jpeg',
         category: 'home',
-        count: 1,
     },
     {
         id: 9,
@@ -88,7 +79,6 @@ export const productsArrey: Product[] = [
         price: 1669,
         image: 'images/blog_pictures/navova_sofas.jpeg',
         category: 'home',
-        count: 1,
     },
     {
         id: 10,
@@ -97,7 +87,6 @@ export const productsArrey: Product[] = [
         price: 699,
         image: 'images/blog_pictures/aruda_tablets.jpeg',
         category: 'home',
-        count: 1,
     },
 
     {
@@ -107,7 +96,6 @@ export const productsArrey: Product[] = [
         price: 320.0,
         image: 'images/blog_pictures/curve_chair.jpeg',
         category: 'chairs',
-        count: 1,
     },
     {
         id: 12,
@@ -116,7 +104,6 @@ export const productsArrey: Product[] = [
         price: 275.0,
         image: 'images/blog_pictures/chair_revolt.jpg',
         category: 'chairs',
-        count: 1,
     },
     {
         id: 13,
@@ -125,7 +112,6 @@ export const productsArrey: Product[] = [
         price: 458.0,
         image: 'images/blog_pictures/chair_avana.jpg',
         category: 'chairs',
-        count: 1,
     },
     {
         id: 14,
@@ -134,7 +120,6 @@ export const productsArrey: Product[] = [
         price: 540.0,
         image: 'images/blog_pictures/chair_ipanema.jpg',
         category: 'chairs',
-        count: 1,
     },
     {
         id: 15,
@@ -143,7 +128,6 @@ export const productsArrey: Product[] = [
         price: 279.0,
         image: 'images/blog_pictures/chair_result.jpg',
         category: 'chairs',
-        count: 1,
     },
     {
         id: 16,
@@ -152,7 +136,6 @@ export const productsArrey: Product[] = [
         price: 2091,
         image: 'images/blog_pictures/tables_henry.jpg',
         category: 'tablets',
-        count: 1,
     },
     {
         id: 17,
@@ -161,7 +144,6 @@ export const productsArrey: Product[] = [
         price: 3200,
         image: 'images/blog_pictures/tablets_segmented.jpg',
         category: 'tablets',
-        count: 1,
     },
     {
         id: 18,
@@ -170,7 +152,6 @@ export const productsArrey: Product[] = [
         price: 1519,
         image: 'images/blog_pictures/bitta_tablets.jpeg',
         category: 'tablets',
-        count: 1,
     },
     {
         id: 19,
@@ -179,7 +160,6 @@ export const productsArrey: Product[] = [
         price: 350,
         image: 'images/blog_pictures/tablets_morth.jpg',
         category: 'tablets',
-        count: 1,
     },
     {
         id: 20,
@@ -188,7 +168,6 @@ export const productsArrey: Product[] = [
         price: 1950.0,
         image: 'images/blog_pictures/tablets_tablet.jpg',
         category: 'tablets',
-        count: 1,
     },
     {
         id: 21,
@@ -197,7 +176,6 @@ export const productsArrey: Product[] = [
         price: 2800.0,
         image: 'images/blog_pictures/sofas_twible.jpg',
         category: 'sofas',
-        count: 1,
     },
     {
         id: 22,
@@ -206,7 +184,6 @@ export const productsArrey: Product[] = [
         price: 2100.0,
         image: 'images/blog_pictures/sofas_angel.jpg',
         category: 'sofas',
-        count: 1,
     },
     {
         id: 23,
@@ -215,7 +192,6 @@ export const productsArrey: Product[] = [
         price: 1876.0,
         image: 'images/blog_pictures/sofas_porder.jpg',
         category: 'sofas',
-        count: 1,
     },
     {
         id: 24,
@@ -224,7 +200,6 @@ export const productsArrey: Product[] = [
         price: 1669.0,
         image: 'images/blog_pictures/sofas_navona.jpg',
         category: 'sofas',
-        count: 1,
     },
     {
         id: 25,
@@ -233,7 +208,6 @@ export const productsArrey: Product[] = [
         price: 2760.0,
         image: 'images/blog_pictures/sofas_fellini.jpg',
         category: 'sofas',
-        count: 1,
     },
     {
         id: 26,
@@ -242,7 +216,6 @@ export const productsArrey: Product[] = [
         price: 1259,
         image: 'images/blog_pictures/armchairs_quilt.jpg',
         category: 'armchairs',
-        count: 1,
     },
     {
         id: 27,
@@ -251,7 +224,6 @@ export const productsArrey: Product[] = [
         price: 679.0,
         image: 'images/blog_pictures/armchairs_sendai.jpg',
         category: 'armchairs',
-        count: 1,
     },
     {
         id: 28,
@@ -260,7 +232,6 @@ export const productsArrey: Product[] = [
         price: 460.0,
         image: 'images/blog_pictures/armchairs_lima.jpg',
         category: 'armchairs',
-        count: 1,
     },
     {
         id: 29,
@@ -269,7 +240,6 @@ export const productsArrey: Product[] = [
         price: 1300,
         image: 'images/blog_pictures/armchairs_mercury.jpg',
         category: 'armchairs',
-        count: 1,
     },
     {
         id: 30,
@@ -278,7 +248,6 @@ export const productsArrey: Product[] = [
         price: 1300,
         image: 'images/blog_pictures/armchairs_daiki.jpg',
         category: 'armchairs',
-        count: 1,
     },
 ]
 

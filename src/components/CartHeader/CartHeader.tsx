@@ -12,13 +12,13 @@ const CartHeader = (props: Props) => {
     return (
         <div className="card_button">
             <div className="card_basket"></div>
-            {Object.keys(productsInCart).map((productId) => (
+            {Object.keys(productsInCart).map((total, productId) => (
                 <div className="amount" key={productId}>
                     ${productsInCart[+productId]}
                 </div>
             ))}
-            {Object.keys(productsInCart).map((count) => (
-                <div className="quantity">{count}</div>
+            {Object.keys(productsInCart).map((productsInCart) => (
+                <div className="quantity">{productsInCart}</div>
             ))}
         </div>
     )

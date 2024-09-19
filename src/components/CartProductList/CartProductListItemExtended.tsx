@@ -2,9 +2,10 @@ import { Button } from '@mui/material'
 import { Product } from 'utils/productsArrey'
 import DeleteIcon from '@mui/icons-material/Delete'
 import Quantity from 'components/Quantity/Quantity'
-import { useAppDispatch } from 'store/hooks'
+import { useAppDispatch, useAppSelector } from 'store/hooks'
 import { changeProductQuantity, removeProductFromCart } from 'store/cartSlice'
 import './CartProductsListItemExtended.css'
+import CartTotal from 'components/CartTotal/CartTotal'
 
 type Props = {
     product: Product
@@ -12,6 +13,7 @@ type Props = {
 }
 const CartProductListItemExtended = ({ product, productsCount }: Props) => {
     const dispatch = useAppDispatch()
+    const productsInCart = useAppSelector((state) => state.productsInCart)
     return (
         <div className="cart_products_extended">
             <Button
@@ -51,7 +53,9 @@ const CartProductListItemExtended = ({ product, productsCount }: Props) => {
                 }
                 minCount={0}
             />
-            <div className="product_count">$ {productsCount}</div>
+            <div className="cart_total">
+                <CartTotal productsInCart={productsInCart} />
+            </div>
         </div>
     )
 }

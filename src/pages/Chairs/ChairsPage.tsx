@@ -22,7 +22,6 @@ const ChairsPage = ({ category }: Props) => {
             >
                 Chairs
             </Typography>
-
             <Grid container spacing={2} xs={10}>
                 {productsArrey
                     .filter((item) => item.category === category)

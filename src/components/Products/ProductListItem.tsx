@@ -7,6 +7,7 @@ import { useDispatch } from 'react-redux'
 import { addLike, removeLike } from 'store/likeSlice'
 import { addProductToCart } from 'store/cartSlice'
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 type Props = {
     id: number
@@ -36,7 +37,10 @@ const ProductListItem = ({ title, image, type, price, id }: Props) => {
                 >
                     {isLiked ? <FavoriteIcon /> : <FavoriteBorderIcon />}
                 </button>
-                <h3 className="product-title">{title}</h3>
+                <h3 className="product-title">
+                    {' '}
+                    <Link to={`/products/${id}`}> {title}</Link>
+                </h3>
                 <div className="product-features">{type}</div>
                 <div className="product-price">$ {price}</div>
 

@@ -13,6 +13,7 @@ import SofasPage from 'pages/Sofas/SofasPage'
 import ArmchairsPage from 'pages/Armchairs/ArmchairsPage'
 
 import CartPage from 'pages/Cart/CartPage'
+import ProductPage from 'pages/Product/ProductPage'
 
 const App = () => {
     return (
@@ -41,6 +42,7 @@ const App = () => {
                     element={<ArmchairsPage category="armchairs" />}
                 />
                 <Route path="cart" element={<CartPage />} />
+                <Route path="products/:id" element={<ProductPage />} />
             </Routes>
             <Footer />
         </StyledEngineProvider>

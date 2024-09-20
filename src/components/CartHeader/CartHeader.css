@@ -57,5 +57,11 @@
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     margin-right: 20px;
-
+}
+.cart_basket_total {
+    color: white;
+}
+a:-webkit-any-link {
+    cursor: pointer;
+    text-decoration: none;
 }

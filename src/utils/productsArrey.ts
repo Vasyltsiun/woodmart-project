@@ -103,7 +103,7 @@ export const productsArrey: Product[] = [
         type: 'Chairs',
         price: 275.0,
         image: 'images/blog_pictures/chair_revolt.jpg',
-        category: 'home',
+        category: 'chairs',
     },
     {
         id: 13,

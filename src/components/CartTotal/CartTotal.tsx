@@ -13,9 +13,7 @@ const CartTotal = ({
     productsObject = getProductsObject(productsArrey),
 }: Props) => {
     return (
-        <div className="cart_total">
-            <p>Cart Totals</p>
-
+        <div>
             <div>
                 Total:{' '}
                 {Object.keys(productsInCart).reduce(

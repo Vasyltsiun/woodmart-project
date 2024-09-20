@@ -24,7 +24,7 @@ const CartProductListItemExtended = ({ product, productsCount }: Props) => {
                 <DeleteIcon />
             </Button>
             <div className="product-img">
-                <img src={product.image} alt="" />
+                <img src={product.image5} alt="" />
             </div>
 
             <div className="product_title">{product.title}</div>
@@ -53,7 +53,7 @@ const CartProductListItemExtended = ({ product, productsCount }: Props) => {
                 }
                 minCount={0}
             />
-            <div className="cart_total">
+            <div className="product_count">
                 <CartTotal productsInCart={productsInCart} />
             </div>
         </div>

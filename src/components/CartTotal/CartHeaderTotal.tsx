@@ -13,18 +13,17 @@ const CartHeaderTotal = ({
     productsObject = getProductsObject(productsArrey),
 }: Props) => {
     return (
-        <div className="cart_basket">
-            <div>
-                {Object.keys(productsInCart).reduce(
-                    (total, productId) =>
-                        total +
-                        productsInCart[+productId] *
-                            productsObject[+productId].price,
-                    0
-                )}
-                $
-            </div>
+        <div>
+            {Object.keys(productsInCart).reduce(
+                (total, productId) =>
+                    total +
+                    productsInCart[+productId] *
+                        productsObject[+productId].price,
+                0
+            )}
+            $
         </div>
     )
 }
+
 export default CartHeaderTotal

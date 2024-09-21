@@ -6,7 +6,7 @@ type Props = {
 }
 const CartProductListItem = ({ product, productsCount }: Props) => {
     return (
-        <div>
+        <div className="test">
             {product.title}:{productsCount}
         </div>
     )

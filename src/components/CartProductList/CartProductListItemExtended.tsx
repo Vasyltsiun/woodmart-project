@@ -6,6 +6,7 @@ import { useAppDispatch, useAppSelector } from 'store/hooks'
 import { changeProductQuantity, removeProductFromCart } from 'store/cartSlice'
 import './CartProductsListItemExtended.css'
 import CartTotal from 'components/CartTotal/CartTotal'
+import CartProductListItemTotal from './CartProductListItemTotal'
 
 type Props = {
     product: Product
@@ -54,7 +55,10 @@ const CartProductListItemExtended = ({ product, productsCount }: Props) => {
                 minCount={0}
             />
             <div className="product_count">
-                <CartTotal productsInCart={productsInCart} />
+                <CartProductListItemTotal
+                    productsCount={productsCount}
+                    productId={product.id}
+                />
             </div>
         </div>
     )

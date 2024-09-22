@@ -2,6 +2,9 @@ import { useParams } from 'react-router'
 import { getProductsObject, Product, productsArrey } from 'utils/productsArrey'
 import './ProductPage.css'
 import { Button, Container } from '@mui/material'
+import { useDispatch } from 'react-redux'
+import { addProductToCart } from 'store/cartSlice'
+import { useState } from 'react'
 
 type Props = {}
 
@@ -12,6 +15,8 @@ type ProductsObject = {
 const ProductPage = (props: Props) => {
     const productsObject: ProductsObject = getProductsObject(productsArrey)
     const { id } = useParams()
+    const dispatch = useDispatch()
+    const [count] = useState<number>(1)
 
     return (
         <Container sx={{ padding: '50px' }}>
@@ -56,7 +61,14 @@ const ProductPage = (props: Props) => {
                         $ {productsObject[parseInt(id!)].price}.00
                     </div>
                     <div>
-                        <Button className="cart_button">Add to cart</Button>
+                        <Button
+                            variant="outlined"
+                            onClick={() =>
+                                dispatch(addProductToCart({ id, count }))
+                            }
+                        >
+                            Add to cart
+                        </Button>
                         <Button className="buy_button">Buy now</Button>
                     </div>
                     <div>Shipping and returns</div>

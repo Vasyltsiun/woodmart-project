@@ -1,4 +1,4 @@
-import { getProductsObject, Product, productsArrey } from 'utils/productsArrey'
+import { Product } from 'utils/productsArrey'
 
 type Props = {
     productsInCart: {

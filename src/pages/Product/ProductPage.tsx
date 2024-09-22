@@ -2,9 +2,6 @@ import { useParams } from 'react-router'
 import { getProductsObject, Product, productsArrey } from 'utils/productsArrey'
 import './ProductPage.css'
 import { Button, Container } from '@mui/material'
-import { addProductToCart } from 'store/cartSlice'
-import { count } from 'console'
-import { useDispatch } from 'react-redux'
 
 type Props = {}
 

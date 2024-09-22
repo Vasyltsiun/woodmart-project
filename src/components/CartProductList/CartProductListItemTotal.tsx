@@ -1,5 +1,4 @@
-import { useAppSelector } from 'store/hooks'
-import { getProductsObject, Product, productsArrey } from 'utils/productsArrey'
+import { getProductsObject, productsArrey } from 'utils/productsArrey'
 
 type Props = {
     productsCount: number

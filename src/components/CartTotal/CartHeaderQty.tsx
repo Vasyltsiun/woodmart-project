@@ -12,7 +12,10 @@ type Props = {
 const CartHeaderQty = ({ productsInCart }: Props) => {
     return (
         <div>
-            {Object.keys(productsInCart).reduce((qty, productId) => qty + 1, 0)}
+            {Object.keys(productsInCart).reduce(
+                (qty, productId) => qty + productsInCart[+productId],
+                0
+            )}
         </div>
     )
 }

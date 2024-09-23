@@ -14,6 +14,7 @@ import ArmchairsPage from 'pages/Armchairs/ArmchairsPage'
 
 import CartPage from 'pages/Cart/CartPage'
 import ProductPage from 'pages/Product/ProductPage'
+import CheckoutPage from 'pages/Checkout/CheckoutPage'
 
 const App = () => {
     return (
@@ -43,6 +44,7 @@ const App = () => {
                 />
                 <Route path="cart" element={<CartPage />} />
                 <Route path="products/:id" element={<ProductPage />} />
+                <Route path="checkout" element={<CheckoutPage />} />
             </Routes>
             <Footer />
         </StyledEngineProvider>

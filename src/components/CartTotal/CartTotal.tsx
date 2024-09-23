@@ -1,4 +1,4 @@
-import { Button } from '@mui/material'
+import { Link } from 'react-router-dom'
 import { getProductsObject, Product, productsArrey } from 'utils/productsArrey'
 
 type Props = {
@@ -38,7 +38,7 @@ const CartTotal = ({
                     $
                 </div>
             </div>
-            <Button className="btns_wrapper">Proceed to checkout</Button>
+            <Link to="/checkout">Proceed to checkout</Link>
         </div>
     )
 }

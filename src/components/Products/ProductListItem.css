@@ -72,3 +72,6 @@
     border: none;
     background-color: white;
 }
+a:-webkit-any-link {
+    color: black;
+}

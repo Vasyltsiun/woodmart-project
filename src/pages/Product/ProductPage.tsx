@@ -5,6 +5,7 @@ import { Button, Container } from '@mui/material'
 import { useDispatch } from 'react-redux'
 import { addProductToCart } from 'store/cartSlice'
 import { useState } from 'react'
+import Reviews from 'components/Reviews/Reviews'
 
 type Props = {}
 
@@ -74,6 +75,7 @@ const ProductPage = (props: Props) => {
                     <div>Shipping and returns</div>
                 </div>
             </div>
+            <Reviews />
         </Container>
     )
 }

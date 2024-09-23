@@ -95,3 +95,45 @@
     margin-right: 10px;
     margin-bottom: 10px;
 }
+.reviews_content {
+    display: flex;
+    width: 100%;
+}
+.reviews {
+    padding: 0 0 20px 0;
+    font-weight: 400;
+    font-size: 40px;
+    border-top: solid 1px rgb(245, 154, 87);
+    
+}
+.reviews_form {
+    width: 50%;
+    background-color: rgb(246, 246, 246);
+    margin: 5px 10px 0 0;
+    text-align: center;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.review_text_area{
+    width: 400px;
+    font-weight: 400;
+    font-size: 20px;
+    color: rgb(245, 154, 87);
+}
+.review_name_field {
+    margin-bottom: 10px;
+    color: rgb(245, 154, 87);
+}
+.reviews_left {
+    width: 50%;
+    background-color: rgb(246, 246, 246);
+    margin: 5px 10px 0 0;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}

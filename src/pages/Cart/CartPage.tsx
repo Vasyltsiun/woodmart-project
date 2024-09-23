@@ -4,6 +4,7 @@ import CartProductListItemExtended from 'components/CartProductList/CartProductL
 import CartTotal from 'components/CartTotal/CartTotal'
 import { useAppSelector } from 'store/hooks'
 import './CartPage.css'
+import Reviews from 'components/Reviews/Reviews'
 
 type Props = {}
 

@@ -1,3 +1,95 @@
 .main-container {
     max-width: 1490px;
 }
+.cart_content {
+    background-color: rgb(246, 246, 246);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    font-weight: 700;
+    color: #242424;
+    font-size: 24px;
+    padding-left: 10px;
+    margin-top: 50px;
+}
+.cart_totals {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-top: solid 1px rgb(195, 194, 194);
+ 
+}
+.art_content {
+    width: 100%;
+}
+.cart_name {
+    padding: 20px 20px 20px 10px;    
+    font-weight: 300;
+    color: #242424;
+    font-size: 20px;
+    padding-top: 100px;
+
+}
+.cart_sum {
+    padding: 20px;
+    font-weight: 300;
+    color: rgb(245, 154, 87);
+    font-size: 20px;
+    padding-top: 100px;
+}
+.cart_shipping {
+    width: 300px;
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    border-top: solid 1px rgb(195, 194, 194);
+    font-weight: 300;
+    color: #242424;
+    font-size: 20px;
+    padding: 55px 0 55px 10px;
+    margin: 25px 0 25px 0;
+}
+.shipping_content {
+    text-align: end;
+
+}
+.free_shipping {
+    color: #242424;
+    vertical-align: middle;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 20px 5px;
+    cursor: pointer;
+}
+.shipping_all {
+    color: #777777;
+    vertical-align: middle;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    margin: 20px 5px;
+}
+.change_address {
+    color: rgb(245, 154, 87);
+    vertical-align: middle;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    margin: 20px 5px;
+}
+.btns_wrapper{
+    width: 320px;
+    height: 35px;
+    border-radius: 25px;
+    background-color: rgb(245, 154, 87);
+    border: none;
+    color: white;
+    text-align: center;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}

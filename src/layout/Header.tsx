@@ -6,7 +6,6 @@ import Menu from '../components/Menu/Menu'
 import Avatar from '../components/Menu/Avatar'
 import Search from '../components/Menu/Search'
 import Compare from '../components/Menu/Compare'
-import Wishlist from '../components/Menu/Wishlist'
 import Login from '../components/Menu/Login'
 import './Header.css'
 
@@ -29,7 +28,6 @@ const Header = (props: Props) => {
                         <Logo />
                         <Search />
                         <Compare />
-                        <Wishlist />
                         <Login />
                     </Toolbar>
                 </Container>

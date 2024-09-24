@@ -477,3 +477,8 @@ export const getProductsObject = (array: Product[]) =>
         }),
         {}
     )
+export const getProductsWish = (array: Product[]) =>
+    array.reduce((object, products) => ({
+        ...object,
+        [products.id]: products,
+    }))

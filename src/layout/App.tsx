@@ -15,6 +15,8 @@ import ArmchairsPage from 'pages/Armchairs/ArmchairsPage'
 import CartPage from 'pages/Cart/CartPage'
 import ProductPage from 'pages/Product/ProductPage'
 import CheckoutPage from 'pages/Checkout/CheckoutPage'
+import Wishlist from 'components/Menu/Wishlist'
+import WishlistPage from 'pages/Wishlist/WishlistPage'
 
 const App = () => {
     return (
@@ -45,6 +47,7 @@ const App = () => {
                 <Route path="cart" element={<CartPage />} />
                 <Route path="products/:id" element={<ProductPage />} />
                 <Route path="checkout" element={<CheckoutPage />} />
+                <Route path="wishlist" element={<WishlistPage />} />
             </Routes>
             <Footer />
         </StyledEngineProvider>

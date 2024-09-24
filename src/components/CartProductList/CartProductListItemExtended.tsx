@@ -5,7 +5,6 @@ import Quantity from 'components/Quantity/Quantity'
 import { useAppDispatch } from 'store/hooks'
 import { changeProductQuantity, removeProductFromCart } from 'store/cartSlice'
 import './CartProductsListItemExtended.css'
-
 import CartProductListItemTotal from './CartProductListItemTotal'
 
 type Props = {

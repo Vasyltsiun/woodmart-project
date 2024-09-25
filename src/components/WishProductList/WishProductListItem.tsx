@@ -4,6 +4,6 @@ type Props = {
     product: Product
 }
 const WishProductListItem = ({ product }: Props) => {
-    return <div className="test">{product.title}</div>
+    return <div></div>
 }
 export default WishProductListItem

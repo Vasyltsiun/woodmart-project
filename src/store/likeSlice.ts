@@ -1,4 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit'
+import { omit } from 'lodash'
 
 type LikeProductState = {
     [id: number]: boolean
@@ -14,10 +15,7 @@ export const likeSlice = createSlice({
             ...state,
             [action.payload]: true,
         }),
-        removeLike: (state, action) => ({
-            ...state,
-            [action.payload]: false,
-        }),
+        removeLike: (state, action) => omit(state, action.payload),
     },
 })
 

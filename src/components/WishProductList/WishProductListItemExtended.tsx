@@ -2,13 +2,13 @@ import { Button } from '@mui/material'
 import { Product } from 'utils/productsArrey'
 import DeleteIcon from '@mui/icons-material/Delete'
 import { useAppDispatch } from 'store/hooks'
-import { removeProductFromCart } from 'store/cartSlice'
+import { removeLike } from 'store/likeSlice'
 
 type Props = {
     product: Product
     productsCount: number
 }
-const WishProductListItemExtended = ({ product, productsCount }: Props) => {
+const WishProductListItemExtended = ({ product }: Props) => {
     const dispatch = useAppDispatch()
 
     return (
@@ -16,12 +16,12 @@ const WishProductListItemExtended = ({ product, productsCount }: Props) => {
             <Button
                 className="remove_button"
                 variant="outlined"
-                onClick={() => dispatch(removeProductFromCart(product.id))}
+                onClick={() => dispatch(removeLike(product.id))}
             >
                 <DeleteIcon />
             </Button>
             <div className="product-img">
-                <img src={product.image} alt="" />
+                <img src={product.image5} alt="" />
             </div>
 
             <div className="product_title">{product.title}</div>

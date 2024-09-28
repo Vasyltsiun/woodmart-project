@@ -12,7 +12,7 @@ console.log(productsObject)
 const CartHeader = (props: Props) => {
     const productsInCart = useAppSelector((state) => state.productsInCart)
     return (
-        <div className="card_button">
+        <div className="card_button 1">
             <div className="card_basket"></div>
             <div className="cart_basket_total">
                 <CartHeaderTotal productsInCart={productsInCart} />

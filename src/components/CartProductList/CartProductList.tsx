@@ -1,5 +1,5 @@
 import { getProductsObject, Product, productsArrey } from 'utils/productsArrey'
-import CartProductListItem from './CartProductListItem'
+import CartProductListItemExtended from './CartProductListItemExtended'
 
 type Props = {
     productsInCart: {
@@ -19,7 +19,7 @@ console.log(productsObject)
 const CartProductList = ({
     productsInCart,
     productsObject = getProductsObject(productsArrey),
-    CartItem = CartProductListItem,
+    CartItem = CartProductListItemExtended,
     removeProductsFromCart,
     changeProductQuantity,
 }: Props) => {

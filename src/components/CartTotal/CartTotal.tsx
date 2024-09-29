@@ -1,3 +1,4 @@
+import { Button } from '@mui/material'
 import { Link } from 'react-router-dom'
 import { getProductsObject, Product, productsArrey } from 'utils/productsArrey'
 
@@ -38,7 +39,9 @@ const CartTotal = ({
                     $
                 </div>
             </div>
-            <Link to="/checkout">Proceed to checkout</Link>
+            <Button variant="outlined" className="proceed_button">
+                <Link to="/checkout">Proceed to checkout</Link>
+            </Button>
         </div>
     )
 }

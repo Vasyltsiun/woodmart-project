@@ -2,7 +2,6 @@ import { Container, Toolbar } from '@mui/material'
 import './BottomMenu.css'
 import MenuItem from './MenuItem'
 import CartHeader from 'components/CartHeader/CartHeader'
-import WishlistPage from 'pages/Wishlist/WishlistPage'
 import Wishlist from './Wishlist'
 
 type Props = {}

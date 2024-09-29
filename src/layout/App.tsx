@@ -11,11 +11,9 @@ import BottomMenu from 'components/Menu/BottomMenu'
 import '../components/Menu/BottomMenu.css'
 import SofasPage from 'pages/Sofas/SofasPage'
 import ArmchairsPage from 'pages/Armchairs/ArmchairsPage'
-
 import CartPage from 'pages/Cart/CartPage'
 import ProductPage from 'pages/Product/ProductPage'
 import CheckoutPage from 'pages/Checkout/CheckoutPage'
-import Wishlist from 'components/Menu/Wishlist'
 import WishlistPage from 'pages/Wishlist/WishlistPage'
 
 const App = () => {

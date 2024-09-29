@@ -3,12 +3,16 @@ import { Product } from 'utils/productsArrey'
 import DeleteIcon from '@mui/icons-material/Delete'
 import { useAppDispatch } from 'store/hooks'
 import { removeLike } from 'store/likeSlice'
+import { addProductToCart } from 'store/cartSlice'
+import { useState } from 'react'
 
 type Props = {
     product: Product
-    productsCount: number
+    price: number
 }
-const WishProductListItemExtended = ({ product }: Props) => {
+const WishProductListItemExtended = ({ product, price }: Props) => {
+    const id = product.id
+    const [count] = useState<number>(1)
     const dispatch = useAppDispatch()
 
     return (
@@ -20,11 +24,18 @@ const WishProductListItemExtended = ({ product }: Props) => {
             >
                 <DeleteIcon />
             </Button>
-            <div className="product-img">
+            <div className="wish_product-img">
                 <img src={product.image5} alt="" />
             </div>
 
-            <div className="product_title">{product.title}</div>
+            <div className="wish_product_title">{product.title}</div>
+            <div className="wish_product-price">$ {product.price}</div>
+            <Button
+                variant="outlined"
+                onClick={() => dispatch(addProductToCart({ id, count }))}
+            >
+                Add to cart
+            </Button>
         </div>
     )
 }

@@ -2,6 +2,7 @@ import { useAppSelector } from 'store/hooks'
 import { Container, Grid, Typography } from '@mui/material'
 import WishProductList from 'components/WishProductList/WishProductList'
 import WishProductListItemExtended from 'components/WishProductList/WishProductListItemExtended'
+import './WishPage.css'
 
 type Props = {}
 const WishlistPage = (props: Props) => {
@@ -14,11 +15,11 @@ const WishlistPage = (props: Props) => {
                     component={'h1'}
                     sx={{ margin: '40px 0' }}
                 >
-                    <div className="cart_header">
+                    <div className="wish_cart_header">
                         <div>PRODUCTS</div>
+                        <div>TITLE</div>
                         <div>PRICE</div>
-                        <div>QUANTITY</div>
-                        <div>SUBTOTAL</div>
+                        <div>ADD</div>
                     </div>
                 </Typography>
                 <Grid container spacing={4} sx={{ marginBottom: '30px' }}>

@@ -26,24 +26,24 @@ const ProductPage = (props: Props) => {
                     <div>
                         <img
                             className="product_image"
-                            src="../images/blog_pictures/curve_chair_1.jpg"
+                            src={productsObject[parseInt(id!)].image1}
                             alt=""
                         />
                         <img
                             className="product_image"
-                            src="../images/blog_pictures/curve_chair_2.jpg"
+                            src={productsObject[parseInt(id!)].image2}
                             alt=""
                         />
                     </div>
                     <div>
                         <img
                             className="product_image"
-                            src="../images/blog_pictures/curve_chair_3.jpg"
+                            src={productsObject[parseInt(id!)].image3}
                             alt=""
                         />
                         <img
                             className="product_image"
-                            src="../images/blog_pictures/curve_chair_4.jpg"
+                            src={productsObject[parseInt(id!)].image4}
                             alt=""
                         />
                     </div>
